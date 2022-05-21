@@ -1,0 +1,24 @@
+{
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": [
+                                "minecraft:air"
+                            ]
+                        },
+                        "offhand": {
+                            "nbt": "{HdP:1b}"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "hd.prkr:egg/kill"
+    }
+}

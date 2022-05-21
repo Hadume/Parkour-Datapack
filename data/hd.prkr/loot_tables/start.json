@@ -1,0 +1,55 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:ghast_spawn_egg",
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": {
+								"text": "スタートのスポーンエッグ",
+								"color": "yellow",
+								"italic": false
+							}
+						},
+						{
+							"function": "set_lore",
+							"entity": "this",
+							"lore": [
+								{
+									"text": "スタートを召喚するための卵",
+									"color": "aqua",
+									"italic": false
+								},
+								[
+									{
+										"text": "オフハンドに持つ: ",
+										"color": "gray",
+										"italic": false
+									},
+									{
+										"text": "一番近くのスタートを",
+										"color": "white"
+									},
+									{
+										"text": "消す",
+										"color": "white",
+										"bold": true
+									}
+								]
+							]
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{EntityTag:{id:\"minecraft:armor_stand\",Invisible:1b,Marker:1b,Small:1b,Tags:[\"HdP.Start\",\"HdP\"]},HdPS:1b,HdP:1b}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
