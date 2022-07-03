@@ -45,7 +45,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{EntityTag:{id:\"minecraft:armor_stand\",Invisible:1b,Marker:1b,Small:1b,Tags:[\"HdP.Remove\",\"HdP\"]},HdPR:1b,HdP:1b}"
+							"tag": "{EntityTag:{id:\"minecraft:armor_stand\",Invisible:1b,Marker:1b,Small:1b,Tags:[\"HdP.Remove\",\"HdP\"]},HdP:{Remove:1b}}"
 						}
 					]
 				}

@@ -61,7 +61,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{EntityTag:{id:\"minecraft:armor_stand\",Invisible:1b,Marker:1b,Small:1b,Tags:[\"HdP.Laser\",\"HdP\"]},HdP:1b,HdPL:1b}"
+							"tag": "{EntityTag:{id:\"minecraft:armor_stand\",Invisible:1b,Marker:1b,Small:1b,Tags:[\"HdP.Laser\",\"HdP\"]},HdP:{Laser:1b}}"
 						}
 					]
 				}

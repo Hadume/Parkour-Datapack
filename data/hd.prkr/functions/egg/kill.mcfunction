@@ -10,10 +10,10 @@
 ## オフハンドをコピー
 	data modify storage hd.p: OffHandCopy set from entity @s Inventory[{Slot:-106b}]
 ## 一番近くの物を消す
-	execute if data storage hd.p: OffHandCopy.tag.HdPL store success score $HdP.Success HdP.Temp run kill @e[type=minecraft:marker,tag=HdP.Laser,distance=..4,sort=nearest,limit=1]
-	execute if data storage hd.p: OffHandCopy.tag.HdPS store success score $HdP.Success HdP.Temp as @e[type=minecraft:marker,tag=HdP.Start,distance=..4,sort=nearest,limit=1] at @s run forceload remove ~ ~ ~ ~
-	execute if data storage hd.p: OffHandCopy.tag.HdPS store success score $HdP.Success HdP.Temp run kill @e[type=minecraft:marker,tag=HdP.Start,distance=..4,sort=nearest,limit=1]
-	execute if data storage hd.p: OffHandCopy.tag.HdPR store success score $HdP.Success HdP.Temp run kill @e[type=minecraft:marker,tag=HdP.Remove,distance=..4,sort=nearest,limit=1]
+	execute if data storage hd.p: OffHandCopy.tag.HdP.Laser store success score $HdP.Success HdP.Temp run kill @e[type=minecraft:marker,tag=HdP.Laser,distance=..4,sort=nearest,limit=1]
+	execute if data storage hd.p: OffHandCopy.tag.HdP.Start store success score $HdP.Success HdP.Temp as @e[type=minecraft:marker,tag=HdP.Start,distance=..4,sort=nearest,limit=1] at @s run forceload remove ~ ~ ~ ~
+	execute if data storage hd.p: OffHandCopy.tag.HdP.Start store success score $HdP.Success HdP.Temp run kill @e[type=minecraft:marker,tag=HdP.Start,distance=..4,sort=nearest,limit=1]
+	execute if data storage hd.p: OffHandCopy.tag.HdP.Remove store success score $HdP.Success HdP.Temp run kill @e[type=minecraft:marker,tag=HdP.Remove,distance=..4,sort=nearest,limit=1]
 ## アイテムを返す
 	item replace entity @s weapon.mainhand from entity @s weapon.offhand
 	item replace entity @s weapon.offhand with minecraft:air

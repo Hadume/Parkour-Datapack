@@ -11,7 +11,7 @@
                             ]
                         },
                         "offhand": {
-                            "nbt": "{HdP:1b}"
+                            "nbt": "{HdP:{}}"
                         }
                     }
                 }

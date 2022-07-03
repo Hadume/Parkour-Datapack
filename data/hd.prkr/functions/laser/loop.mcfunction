@@ -16,7 +16,7 @@
 ## パーティクルを出す
 	particle minecraft:dust 1 0 0 1.5 ~ ~ ~ 0 0 0 0 1
 ## 音を鳴らすためのTag
-	execute as @a[distance=..8] unless data entity @s SelectedItem.tag.HdPL run tag @s add HdP.Warn
+	execute as @a[distance=..8] unless data entity @s SelectedItem.tag.HdP.Laser run tag @s add HdP.Warn
 ## レーザーに当たったのTag
 	execute as @a[gamemode=adventure,distance=..0.75] run tag @s add HdP.Hit
 ## ループ
