@@ -3,7 +3,7 @@
 # 4tickに一回実行
 #
 # @within function
-#   hd.prkr:load
+#   hd.prkr:init
 #   hd.prkr:5.tick
 
 ## Tagを外す
