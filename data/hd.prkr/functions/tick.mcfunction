@@ -30,10 +30,11 @@
 	### リセット
 		execute as @a[scores={HdP.Dropped.Paper=1..}] at @s run function hd.prkr:dropped.paper
 		execute as @a[scores={HdP.DeathCount=1..}] run function hd.prkr:death.count
-		execute as @a at @s if block ~ ~ ~ minecraft:structure_void run tag @s add HdP.Reset
+		execute as @a[gamemode=adventure] at @s if block ~ ~ ~ #hd.prkr:reset run tag @s add HdP.Reset
 	### ブロックを削除
-		execute as @e[type=minecraft:marker,tag=HdP.Remove] at @s unless entity @a[distance=..16] unless block ~ ~ ~ minecraft:air run setblock ~ ~ ~ minecraft:air
+		execute as @e[type=minecraft:marker,tag=HdP.Remove] at @s unless block ~ ~ ~ minecraft:air run function hd.prkr:remove.block
+		execute as @e[type=minecraft:marker,tag=HdP.Remove,scores={HdP.Timer=1..}] at @s if block ~ ~ ~ minecraft:air run scoreboard players reset @s HdP.Timer
 	### アイテムを削除
 		execute as @e[type=minecraft:item] if data entity @s Thrower at @s unless entity @a[distance=..16] run kill @s
 	### リセット紙を渡す
-		execute as @a unless data entity @s Inventory[{Slot:17b,tag:{HdP:{Reset:1b}}}] run item replace entity @s inventory.8 with minecraft:paper{display:{Name:'{"text":"パルクールリセット紙","color":"aqua","bold": true,"italic":false}',Lore:['[{"text":"捨てる","color":"gold","bold":true,"italic":false},{"text":"とパルクールのスタート地点に戻れるよ","color":"white","bold":false}]']},HdP:{Reset:1b}}
+		execute as @a[gamemode=adventure] unless data entity @s Inventory[{Slot:17b,tag:{HdP:{Reset:1b}}}] run item replace entity @s inventory.8 with minecraft:paper{display:{Name:'{"text":"パルクールリセット紙","color":"aqua","bold": true,"italic":false}',Lore:['[{"text":"捨てる","color":"gold","bold":true,"italic":false},{"text":"とパルクールのスタート地点に戻れるよ","color":"white","bold":false}]']},HdP:{Reset:1b}}

@@ -17,10 +17,11 @@
 	data modify storage hd.p: Init set value 1b
 #> Scoreboard
 # @internal
-	scoreboard objectives add HdP.Temp dummy
-	scoreboard objectives add HdP.SneakTime minecraft.custom:minecraft.sneak_time
-	scoreboard objectives add HdP.Dropped.Paper minecraft.dropped:minecraft.paper
-	scoreboard objectives add HdP.DeathCount deathCount
+	scoreboard objectives add HdP.Temp dummy {"text": "一時使用"}
+	scoreboard objectives add HdP.Timer dummy {"text": "タイマー"}
+	scoreboard objectives add HdP.SneakTime minecraft.custom:minecraft.sneak_time {"text": "スニークしたら"}
+	scoreboard objectives add HdP.Dropped.Paper minecraft.dropped:minecraft.paper {"text": "紙捨てたら"}
+	scoreboard objectives add HdP.DeathCount deathCount {"text": "死んだら"}
 ## Gamerule
 	gamerule doMobLoot false
 	gamerule doMobSpawning false
