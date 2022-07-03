@@ -8,20 +8,18 @@
 
 #> Tags
 # @private
+# @within function prkr:**
  #declare tag HdP.NightVision
+ #declare tag HdP.DolphinsGrace
 ## プレイヤーをスタート位置に運ぶ
 	tp @s @e[type=minecraft:marker,tag=HdP.Start,limit=1]
 ## アイテムを消す
 	execute unless entity @s[distance=..0] run clear @s
-## 暗視を付けなおす
+## エフェクトを付けなおす
 	execute if entity @s[tag=HdP.NightVision] run effect give @s minecraft:night_vision 1000000 0 true
+	execute if entity @s[tag=HdP.DolphinsGrace] run effect give @s minecraft:dolphins_grace 1000000 255 true
 ## 体力空腹回復
 	effect give @s minecraft:instant_health 1 200 true
 	effect give @s minecraft:saturation 1 200 true
 ## スタートが無かったら
 	execute unless entity @e[type=minecraft:marker,tag=HdP.Start] run tellraw @s [{"text":"[パルクールシステム] "},{"text":"スタート位置を検知できませんでした。","color":"red"}]
-## リセット紙を消す
-	execute as @e[type=minecraft:item,nbt={Item:{tag:{HdP:{Reset:1b}}}}] run kill @s
-## スコアをリセット
-	execute if entity @s[scores={HdP.DeathCount=1..}] run scoreboard players reset @s HdP.DeathCount
-	execute if entity @s[scores={HdP.Dropped.Paper=1..}] run scoreboard players reset @s HdP.Dropped.Paper

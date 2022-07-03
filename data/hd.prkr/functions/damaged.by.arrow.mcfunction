@@ -4,7 +4,7 @@
 #
 # @within advancement hd.prkr:damaged.by.arrow
 
-## リセット
-	function hd.prkr:reset
+## リセットタグを追加
+	tag @s add HdP.Reset
 ## 進捗を剝奪
 	advancement revoke @s only hd.prkr:damaged.by.arrow
