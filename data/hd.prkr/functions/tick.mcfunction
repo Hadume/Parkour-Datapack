@@ -22,7 +22,11 @@
 	## スニークしていたら
 		execute as @a[scores={HdP.SneakTime=1..}] at @s run function hd.prkr:sneak.time
 	## メインハンドに卵を持っていたら
-		execute as @a[nbt={SelectedItem:{tag:{HdP:{}}}}] at @s run function hd.prkr:egg/particle
+		execute as @a[nbt={SelectedItem:{tag:{HdP:{Debug:1b}}}}] at @s run function hd.prkr:egg/particle
+	## ニンジン棒を使ったら
+		execute as @a[scores={HdP.Used.COAS=1..}] at @s run function hd.prkr:coas/used
+	## 仮ブロック
+		execute as @e[type=minecraft:shulker,tag=HdP.TempBlock] at @s run function hd.prkr:coas/temp.block/tick
 
 ## その他
 	### リセット
