@@ -36,6 +36,9 @@
 	gamerule spectatorsGenerateChunks false
 	gamerule doImmediateRespawn true
 	gamerule freezeDamage false
+	gamerule showDeathMessages false
+## Time
+	time set 6000
 ## Scheduleをする
 	schedule clear hd.prkr:5.tick
 	function hd.prkr:5.tick
