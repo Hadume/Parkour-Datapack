@@ -37,6 +37,9 @@
 	gamerule doImmediateRespawn true
 	gamerule freezeDamage false
 	gamerule showDeathMessages false
+	gamerule keepInventory true
+	gamerule doTileDrops false
+	gamerule mobGriefing false
 ## Time
 	time set 6000
 ## Scheduleをする

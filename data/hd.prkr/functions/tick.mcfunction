@@ -14,7 +14,7 @@
  #declare tag HdP.Reset
 ## ギミック用
 	### レーザーの音を鳴らす
-		execute as @a[tag=HdP.Warn] at @s run playsound minecraft:block.note_block.bit master @s ~ ~ ~ 0.75 2
+		execute as @a[tag=HdP.Warn] at @s run playsound minecraft:block.note_block.bit block @s ~ ~ ~ 0.75 2
 
 ## 設計用
 	## オブジェクト設置

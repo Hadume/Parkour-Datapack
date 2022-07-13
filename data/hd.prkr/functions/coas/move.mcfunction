@@ -26,4 +26,4 @@
 ## Tagを削除
 	tag @s remove HdP.Move
 ## 音
-	execute at @s run playsound minecraft:block.fire.extinguish master @s ~ ~ ~ 1 2
+	execute at @s run playsound minecraft:block.fire.extinguish block @s ~ ~ ~ 1 2
