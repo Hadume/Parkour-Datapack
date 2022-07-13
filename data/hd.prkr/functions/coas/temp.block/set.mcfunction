@@ -13,4 +13,4 @@
 ## ブロックを設置
 	setblock ~ ~ ~ minecraft:barrier
 ## 音
-	execute as @a[gamemode=!adventure,gamemode=!survival,distance=..8] run playsound minecraft:block.piston.contract master @s ~ ~ ~ 1 2
+	execute as @a[gamemode=!adventure,gamemode=!survival,distance=..8] run playsound minecraft:block.piston.contract block @s ~ ~ ~ 1 2
