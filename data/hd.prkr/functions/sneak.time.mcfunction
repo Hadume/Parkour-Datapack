@@ -4,6 +4,9 @@
 #
 # @within function hd.prkr:tick
 
+#> Tags
+# @private
+ #declare tag HdP
 ## メインハンドのアイテムをコピー
 	execute if data entity @s SelectedItem run data modify storage hd.p: SelectedItemCopy set from entity @s SelectedItem
 ## 手にレーザーの卵を持っていたら

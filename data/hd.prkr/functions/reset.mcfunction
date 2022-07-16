@@ -8,6 +8,9 @@
 
 #> Tags
 # @private
+ #declare tag HdP.Start
+#> Tags
+# @private
 # @within function prkr:**
  #declare tag HdP.NightVision
  #declare tag HdP.DolphinsGrace

@@ -6,6 +6,10 @@
 #   hd.prkr:init
 #   hd.prkr:5.tick
 
+#> Tags
+# @private
+ #declare tag HdP.Laser
+
 ## Tagを外す
 	execute as @a[tag=HdP.Warn] run tag @s remove HdP.Warn
 	execute as @a[tag=HdP.Hit] run tag @s remove HdP.Hit

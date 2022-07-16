@@ -6,6 +6,10 @@
 
 #> Tags
 # @private
+ #declare tag HdP
+ #declare tag HdP.Remove
+#> Tags
+# @private
 # @within function
 #   prkr:**
 #   hd.prkr:dropped.paper

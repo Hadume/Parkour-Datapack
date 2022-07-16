@@ -4,12 +4,6 @@
 #
 # @within function hd.prkr:load
 
-#> Tags
-# @internal
- #declare tag HdP
- #declare tag HdP.Laser
- #declare tag HdP.Start
- #declare tag HdP.Remove
 #> Storage
 # @internal
  #declare storage hd.p:
