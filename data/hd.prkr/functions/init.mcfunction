@@ -41,7 +41,7 @@
 	gamerule doTileDrops false
 	gamerule mobGriefing false
 ## Time
-	time set 6000t
+	time set 6000
 ## Scheduleをする
 	schedule clear hd.prkr:5.tick
 	function hd.prkr:5.tick
