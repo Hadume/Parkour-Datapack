@@ -57,7 +57,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{HdP:{Debug:1b,COAS:1b}}"
+							"tag": "{HdP:{Debug:1b,COAS:1b},Enchantments:[{id:\"\",lvl:0s}]}"
 						}
 					]
 				}

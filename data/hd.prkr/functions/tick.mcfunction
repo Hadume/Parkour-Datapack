@@ -39,7 +39,7 @@
 		#### タグ追加
 			execute as @a[scores={HdP.Dropped.Paper=1..}] at @s run function hd.prkr:dropped.paper
 			execute as @a[scores={HdP.DeathCount=1..}] run function hd.prkr:death.count
-			execute as @a[gamemode=adventure] at @s if block ~ ~ ~ #hd.prkr:reset run tag @s add HdP.Reset
+			execute as @a[gamemode=adventure] at @s if predicate hd.prkr:reset run tag @s add HdP.Reset
 	### 経験値リセット
 		execute as @a[nbt=!{XpP:0.0f}] run experience set @s 0 points
 		execute as @a unless entity @s[level=0] run experience set @s 0 levels

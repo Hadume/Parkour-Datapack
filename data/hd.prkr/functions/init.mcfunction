@@ -6,6 +6,7 @@
 
 #> Storage
 # @internal
+# @within function prkr:**
  #declare storage hd.p:
 ## 初期化完了
 	data modify storage hd.p: Init set value 1b

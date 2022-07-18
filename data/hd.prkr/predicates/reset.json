@@ -1,0 +1,51 @@
+{
+    "condition": "minecraft:alternative",
+    "terms": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "location": {
+                    "block": {
+                        "blocks": [
+                            "minecraft:light"
+                        ],
+                        "state": {
+                            "level": "0"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "location": {
+                    "block": {
+                        "blocks": [
+                            "minecraft:light"
+                        ],
+                        "state": {
+                            "level": "1"
+                        }
+                    }
+                },
+                "nbt": "{OnGround:1b}"
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "location": {
+                    "block": {
+                        "blocks": [
+                            "minecraft:lava"
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}
