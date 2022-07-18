@@ -17,7 +17,7 @@
 ## プレイヤーをスタート位置に運ぶ
 	#tp @s @e[type=minecraft:marker,tag=HdP.Start,limit=1]
 ## アイテムを消す
-	execute unless entity @s[distance=..0] run clear @s
+	clear @s
 ## エフェクトを付けなおす
 	execute if entity @s[tag=HdP.NightVision] run effect give @s minecraft:night_vision 1000000 0 true
 	execute if entity @s[tag=HdP.DolphinsGrace] run effect give @s minecraft:dolphins_grace 1000000 255 true
