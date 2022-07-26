@@ -5,7 +5,9 @@
 # @within function hd.prkr:coas/temp.block/tick
 
 ## 
-	execute if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+	execute unless block ~ ~ ~ minecraft:air if entity @s[tag=HdP.TempBlock] run setblock ~ ~ ~ minecraft:air
+	execute unless block ~ ~ ~ minecraft:light[level=0] if entity @s[tag=HdP.TempBlock.Reset] run setblock ~ ~ ~ minecraft:light[level=0]
+	execute unless block ~ ~ ~ minecraft:light[level=1] if entity @s[tag=HdP.TempBlock.Reset.OnGround] run setblock ~ ~ ~ minecraft:light[level=1]
 ## シュルカーを削除
 	tp @s ~ -3000 ~
 ## 音
