@@ -2,7 +2,7 @@
 #
 # ニンジン棒を使ったら
 #
-# @within function hd.prkr:tick
+# @within function hd.prkr:tick/players
 
 ## スコアを持っていなかったら、スコアを与える
 	execute unless score @s HdP.COAS.Stat matches ..2147483647 run scoreboard players set @s HdP.COAS.Stat 0

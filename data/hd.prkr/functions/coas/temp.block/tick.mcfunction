@@ -2,7 +2,7 @@
 #
 # 仮ブロック
 #
-# @within function hd.prkr:tick
+# @within function hd.prkr:tick/
 
 ## スコアを増加
 	scoreboard players add @s HdP.Timer 1

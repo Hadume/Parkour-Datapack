@@ -2,7 +2,7 @@
 #
 # 卵の位置を知らせる
 #
-# @within function hd.prkr:tick
+# @within function hd.prkr:tick/players
 
 ## メインハンドのアイテムをコピー
 	data modify storage hd.p: SelectedItemCopy set from entity @s SelectedItem

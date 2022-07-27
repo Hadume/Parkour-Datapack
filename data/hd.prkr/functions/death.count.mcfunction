@@ -2,7 +2,7 @@
 #
 # 死んだら
 #
-# @within function hd.prkr:tick
+# @within function hd.prkr:tick/players
 
 ## リセットタグを追加
 	execute if entity @s[nbt={DeathTime:0s}] run tag @s add HdP.Reset

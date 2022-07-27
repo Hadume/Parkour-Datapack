@@ -2,7 +2,7 @@
 #
 # スニークしていたら
 #
-# @within function hd.prkr:tick
+# @within function hd.prkr:tick/players
 
 #> Tags
 # @private

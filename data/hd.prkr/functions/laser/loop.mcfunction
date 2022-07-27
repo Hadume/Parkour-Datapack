@@ -9,7 +9,7 @@
 #> Tags
 # @private
 # @within function
-#   hd.prkr:tick
+#   hd.prkr:tick/players
 #   hd.prkr:5.tick
  #declare tag HdP.Warn
  #declare tag HdP.Hit

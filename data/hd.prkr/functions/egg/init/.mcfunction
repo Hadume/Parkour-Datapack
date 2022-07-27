@@ -2,7 +2,7 @@
 #
 # オブジェクトを初期化
 #
-# @within function hd.prkr:tick
+# @within function hd.prkr:tick/
 
 #> Tags
 # @within function hd.prkr:egg/**

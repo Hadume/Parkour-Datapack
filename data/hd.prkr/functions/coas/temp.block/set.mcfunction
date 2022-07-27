@@ -7,7 +7,7 @@
 #> Tags
 # @private
 # @within function
-#   hd.prkr:tick
+#   hd.prkr:tick/
 #   hd.prkr:coas/temp.block/remove
  #declare tag HdP.TempBlock
  #declare tag HdP.TempBlock.Reset
