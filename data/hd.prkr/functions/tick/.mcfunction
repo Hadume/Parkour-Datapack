@@ -8,13 +8,13 @@
 # @private
  #declare tag HdP
  #declare tag HdP.Remove
+ #declare tag HdP.CGArea
 ## プレイヤーで常時実行
 	execute as @a at @s run function hd.prkr:tick/players
 
 ## 設計用
 	## オブジェクト設置
 		execute as @e[type=minecraft:armor_stand,tag=HdP] at @s run function hd.prkr:egg/init/
-	## メインハンドに卵を持っていたら
 	## 仮ブロック
 		execute as @e[type=minecraft:shulker,tag=HdP.TempBlock] at @s run function hd.prkr:coas/temp.block/tick
 
@@ -26,3 +26,5 @@
 		execute as @e[type=minecraft:item] if data entity @s Thrower at @s unless entity @a[distance=..16] run kill @s
 	### 矢を消す
 		execute as @e[type=#arrows,nbt={inGround:1b}] run kill @s
+	### ゲームモード変更エリア
+		execute as @e[type=minecraft:marker,tag=HdP.CGArea] at @s if entity @a[distance=..8] run function hd.prkr:egg/gamemode.area/particle

@@ -12,6 +12,7 @@
 #   hd.prkr:death.count
 #   hd.prkr:damaged.by.arrow
  #declare tag HdP.Reset
+ #declare tag HdP.CGArea
 ## ギミック用
 	### レーザーの音を鳴らす
 		execute if entity @s[tag=HdP.Warn] run playsound minecraft:block.note_block.bit block @s ~ ~ ~ 0.75 2
@@ -36,3 +37,5 @@
 		execute unless entity @s[level=0] run experience set @s 0 levels
 	### リセット紙を渡す
 		execute if entity @s[gamemode=adventure] unless data entity @s Inventory[{Slot:17b,tag:{HdP:{Reset:1b}}}] run item replace entity @s inventory.8 with minecraft:paper{display:{Name:'{"text":"パルクールリセット紙","color":"aqua","bold": true,"italic":false}',Lore:['[{"text":"捨てる","color":"gold","bold":true,"italic":false},{"text":"とパルクールのスタート地点に戻れるよ","color":"white","bold":false}]']},HdP:{Reset:1b}}
+	### ゲームモードを変更
+		execute if entity @e[type=minecraft:marker,tag=HdP.CGArea,distance=..0.75] run function hd.prkr:egg/gamemode.area/change
