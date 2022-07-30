@@ -35,6 +35,7 @@
 	gamerule keepInventory true
 	gamerule doTileDrops false
 	gamerule mobGriefing false
+	gamerule doLimitedCrafting true
 ## Time
 	time set 6000
 ## Scheduleをする
