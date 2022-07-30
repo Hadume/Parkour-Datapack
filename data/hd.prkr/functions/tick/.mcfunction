@@ -9,6 +9,7 @@
  #declare tag HdP
  #declare tag HdP.Remove
  #declare tag HdP.CGArea
+ #declare tag HdP.ASign
 ## プレイヤーで常時実行
 	execute as @a at @s run function hd.prkr:tick/players
 
@@ -28,3 +29,6 @@
 		execute as @e[type=#arrows,nbt={inGround:1b}] run kill @s
 	### ゲームモード変更エリア
 		execute as @e[type=minecraft:marker,tag=HdP.CGArea] at @s if entity @a[distance=..8] run function hd.prkr:egg/gamemode.area/particle
+	### 看板の情報を取得
+		execute as @e[type=minecraft:marker,tag=HdP.ASign,nbt={data:{HdP:{ASign:{Put:1b}}}}] at @s unless block ~ ~ ~ #minecraft:signs run data modify entity @s data.HdP.ASign.Put set value 0b
+		execute as @e[type=minecraft:marker,tag=HdP.ASign,nbt={data:{HdP:{ASign:{Put:0b}}}}] at @s if block ~ ~ ~ #minecraft:signs run function hd.prkr:egg/attractive.sign/

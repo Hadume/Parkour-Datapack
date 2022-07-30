@@ -12,11 +12,13 @@
  #declare tag HdP.Remove
  #declare tag HdP.EndGateway
  #declare tag HdP.CGArea
+ #declare tag HdP.ASign
 ## それぞれのオブジェクトに対応するEntityを召喚
 	execute if entity @s[tag=HdP.Laser] run summon minecraft:marker ~ ~ ~ {Tags:["HdP.Laser","HdP"],Rotation:[0.0f,0.0f]}
 	execute if entity @s[tag=HdP.Start] run function hd.prkr:egg/init/start
 	execute if entity @s[tag=HdP.Remove] run summon minecraft:marker ~ ~ ~ {Tags:["HdP.Remove","HdP"],Rotation:[0.0f,0.0f]}
 	execute if entity @s[tag=HdP.CGArea] run summon minecraft:marker ~ ~ ~ {Tags:["HdP.CGArea","HdP"],Rotation:[0.0f,0.0f],data:{HdP:{Gamemode:1b}}}
+	execute if entity @s[tag=HdP.ASign] run summon minecraft:marker ~ ~ ~ {Tags:["HdP.ASign","HdP"],Rotation:[0.0f,0.0f],data:{HdP:{ASign:{Enable:1b,Put:0b}}}}
 
 	execute if entity @s[tag=HdP.EndGateway] run setblock ~ ~ ~ minecraft:end_gateway{Age:-9223372036854775808l}
 	execute if entity @s[tag=HdP.EndGateway] run kill @s
