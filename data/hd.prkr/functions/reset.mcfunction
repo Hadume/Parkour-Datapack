@@ -16,6 +16,8 @@
  #declare tag HdP.DolphinsGrace
 ## アイテムを消す
 	clear @s
+## エフェクトを消す
+	effect clear @s
 ## エフェクトを付けなおす
 	execute if entity @s[tag=HdP.NightVision] run effect give @s minecraft:night_vision 1000000 0 true
 	execute if entity @s[tag=HdP.DolphinsGrace] run effect give @s minecraft:dolphins_grace 1000000 255 true
