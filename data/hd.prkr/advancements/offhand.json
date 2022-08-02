@@ -1,0 +1,27 @@
+{
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": [
+                                "minecraft:air"
+                            ]
+                        },
+                        "offhand": {
+                            "nbt": "{HdP:{Debug:1b}}"
+                        }
+                    },
+                    "player": {
+                        "gamemode": "creative"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "hd.prkr:offhand"
+    }
+}
