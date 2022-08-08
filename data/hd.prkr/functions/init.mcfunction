@@ -36,6 +36,10 @@
 	gamerule doTileDrops false
 	gamerule mobGriefing false
 	gamerule doLimitedCrafting true
+## Gamemode
+	defaultgamemode adventure
+## Difficulty
+	difficulty peaceful
 ## Time
 	time set 6000
 ## Scheduleをする
