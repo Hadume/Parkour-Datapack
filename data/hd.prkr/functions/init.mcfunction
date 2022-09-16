@@ -19,6 +19,8 @@
 	scoreboard objectives add HdP.COAS.Stat dummy {"text": "ニンジン棒の状態"}
 	scoreboard objectives add HdP.Dropped.Paper minecraft.dropped:minecraft.paper {"text": "紙捨てたら"}
 	scoreboard objectives add HdP.DeathCount deathCount {"text": "死んだら"}
+## VanillaDatapackを無効化
+	datapack disable "vanilla"
 ## Gamerule
 	gamerule doMobLoot false
 	gamerule doMobSpawning false
