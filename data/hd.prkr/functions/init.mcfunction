@@ -13,12 +13,20 @@
 #> Scoreboard
 # @internal
 	scoreboard objectives add HdP.Temp dummy {"text": "一時使用"}
+	scoreboard objectives add HdP.Global dummy {"text": "全体使用"}
+	scoreboard objectives add HdP.Const dummy {"text": "定数"}
 	scoreboard objectives add HdP.Timer dummy {"text": "タイマー"}
 	scoreboard objectives add HdP.SneakTime custom:sneak_time {"text": "スニークしたら"}
 	scoreboard objectives add HdP.Used.COAS used:carrot_on_a_stick {"text": "ニンジン棒使ったら"}
 	scoreboard objectives add HdP.COAS.Stat dummy {"text": "ニンジン棒の状態"}
 	scoreboard objectives add HdP.Dropped.Paper dropped:paper {"text": "紙捨てたら"}
 	scoreboard objectives add HdP.DeathCount deathCount {"text": "死んだら"}
+#> ScoreHolder
+# @internal
+ #declare score_holder $HdP.Const.31743
+ #declare score_holder $HdP.Const.2^16
+	scoreboard players set $HdP.Const.31743 HdP.Const 31743
+	scoreboard players set $HdP.Const.2^16 HdP.Const 65536
 ## VanillaDatapackを無効化
 	datapack disable "vanilla"
 ## Gamerule
@@ -47,3 +55,7 @@
 ## Scheduleをする
 	schedule clear hd.prkr:5.tick
 	function hd.prkr:5.tick
+## 疑似乱数初期化
+	forceload add 0 0 0 0
+	summon marker 0 0 0 {Tags:["HdP.Marker"]}
+	schedule function hd.prkr:lib/rand/init 10t
