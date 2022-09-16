@@ -7,10 +7,10 @@
 #> Tags
 # @within function hd.prkr:egg/change/*
  #declare tag HdP.This
-## 
+##
 	execute if data storage hd.p: SelectedItemCopy.tag.HdP.Laser run function hd.prkr:egg/change/rotation
 	execute if data storage hd.p: SelectedItemCopy.tag.HdP.Start run function hd.prkr:egg/change/rotation
 
 	execute if data storage hd.p: SelectedItemCopy.tag.HdP.CGArea run function hd.prkr:egg/change/gamemode
 ## Tagを外す
-	execute as @e[type=minecraft:marker,tag=HdP.This] run tag @s remove HdP.This
+	execute as @e[type=marker,tag=HdP.This] run tag @s remove HdP.This

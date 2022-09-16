@@ -18,7 +18,7 @@
 	execute if data storage hd.p: OffHandCopy.tag.HdP.COAS run function hd.prkr:coas/stat
 ## アイテムを返す
 	item replace entity @s weapon.mainhand from entity @s weapon.offhand
-	item replace entity @s weapon.offhand with minecraft:air
+	item replace entity @s weapon.offhand with air
 ## 一時使用ScoreHolderをリセット
 	scoreboard players reset $HdP.Success
 ## 一時使用Storageをリセット

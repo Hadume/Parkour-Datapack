@@ -1,14 +1,14 @@
 {
-    "condition": "minecraft:alternative",
+    "condition": "alternative",
     "terms": [
         {
-            "condition": "minecraft:entity_properties",
+            "condition": "entity_properties",
             "entity": "this",
             "predicate": {
                 "location": {
                     "block": {
                         "blocks": [
-                            "minecraft:light"
+                            "light"
                         ],
                         "state": {
                             "level": "0"
@@ -18,13 +18,13 @@
             }
         },
         {
-            "condition": "minecraft:entity_properties",
+            "condition": "entity_properties",
             "entity": "this",
             "predicate": {
                 "location": {
                     "block": {
                         "blocks": [
-                            "minecraft:light"
+                            "light"
                         ],
                         "state": {
                             "level": "1"
@@ -35,13 +35,13 @@
             }
         },
         {
-            "condition": "minecraft:entity_properties",
+            "condition": "entity_properties",
             "entity": "this",
             "predicate": {
                 "location": {
                     "block": {
                         "blocks": [
-                            "minecraft:lava"
+                            "lava"
                         ]
                     }
                 }

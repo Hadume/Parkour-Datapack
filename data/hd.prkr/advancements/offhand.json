@@ -1,13 +1,13 @@
 {
     "criteria": {
         "trigger": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "inventory_changed",
             "conditions": {
                 "player": {
                     "equipment": {
                         "mainhand": {
                             "items": [
-                                "minecraft:air"
+                                "air"
                             ]
                         },
                         "offhand": {

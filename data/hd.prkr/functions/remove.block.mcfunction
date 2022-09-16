@@ -6,6 +6,6 @@
 
 ## 時間経過
 	scoreboard players add @s HdP.Timer 1
-## 
-	execute if score @s HdP.Timer matches 40.. run setblock ~ ~ ~ minecraft:air
-	execute unless entity @a[distance=..16] run setblock ~ ~ ~ minecraft:air
+##
+	execute if score @s HdP.Timer matches 40.. run setblock ~ ~ ~ air
+	execute unless entity @a[distance=..16] run setblock ~ ~ ~ air

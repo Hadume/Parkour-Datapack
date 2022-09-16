@@ -4,11 +4,11 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "minecraft:item",
-					"name": "minecraft:enderman_spawn_egg",
+					"type": "item",
+					"name": "enderman_spawn_egg",
 					"functions": [
 						{
-							"function": "minecraft:set_name",
+							"function": "set_name",
 							"entity": "this",
 							"name": {
 								"text": "リムーブのスポーンエッグ",
@@ -44,8 +44,8 @@
 							]
 						},
 						{
-							"function": "minecraft:set_nbt",
-							"tag": "{EntityTag:{id:\"minecraft:armor_stand\",Invisible:1b,Marker:1b,Small:1b,Tags:[\"HdP.Remove\",\"HdP\"]},HdP:{Debug:1b,Egg:1b,Remove:1b}}"
+							"function": "set_nbt",
+							"tag": "{EntityTag:{id:\"armor_stand\",Invisible:1b,Marker:1b,Small:1b,Tags:[\"HdP.Remove\",\"HdP\"]},HdP:{Debug:1b,Egg:1b,Remove:1b}}"
 						}
 					]
 				}

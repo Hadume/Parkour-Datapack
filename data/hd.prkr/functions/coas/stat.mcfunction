@@ -12,4 +12,4 @@
 	execute if score @s HdP.COAS.Stat matches 10 run tellraw @s [{"text":"[パルクールシステム] "},{"text":"設置状態","color": "green","bold": true},{"text": "に変更しました。"}]
 	execute if score @s HdP.COAS.Stat matches 20 run tellraw @s [{"text":"[パルクールシステム] "},{"text":"リセットエリア設定状態","color": "light_purple","bold": true},{"text": "に変更しました。"}]
 ## 音
-	playsound minecraft:block.note_block.pling block @s ~ ~ ~ 1 2
+	playsound block.note_block.pling block @s ~ ~ ~ 1 2
