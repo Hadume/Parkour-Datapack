@@ -1,4 +1,4 @@
-#> hd.prkr:death.count
+#> hd.prkr:reset/death.count
 #
 # 死んだら
 #

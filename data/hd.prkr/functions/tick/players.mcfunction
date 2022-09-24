@@ -8,9 +8,7 @@
 # @private
 # @within function
 #   prkr:**
-#   hd.prkr:dropped.paper
-#   hd.prkr:death.count
-#   hd.prkr:damaged.by.arrow
+#   hd.prkr:reset/*
  #declare tag HdP.Reset
  #declare tag HdP.CGArea
 ## ギミック用
@@ -30,8 +28,8 @@
 		#### 状態解除
 			execute if entity @s[tag=HdP.Reset] run tag @s remove HdP.Reset
 		#### タグ追加
-			execute if score @s HdP.Dropped.Paper matches 1.. run function hd.prkr:dropped.paper
-			execute if score @s HdP.DeathCount matches 1.. run function hd.prkr:death.count
+			execute if score @s HdP.Dropped.Paper matches 1.. run function hd.prkr:reset/dropped.paper
+			execute if score @s HdP.DeathCount matches 1.. run function hd.prkr:reset/death.count
 	### 経験値リセット
 		execute unless data entity @s {XpP:0.0f} run experience set @s 0 points
 		execute unless entity @s[level=0] run experience set @s 0 levels

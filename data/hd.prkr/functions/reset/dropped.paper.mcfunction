@@ -1,4 +1,4 @@
-#> hd.prkr:dropped.paper
+#> hd.prkr:reset/dropped.paper
 #
 # 紙を落としたら
 #

@@ -1,4 +1,4 @@
-#> hd.prkr:damaged.by.arrow
+#> hd.prkr:reset/damaged.by.arrow
 #
 # 矢を喰らったらリセット
 #

@@ -12,6 +12,6 @@
         }
     },
     "rewards": {
-        "function": "hd.prkr:damaged.by.arrow"
+        "function": "hd.prkr:reset/damaged.by.arrow"
     }
 }
