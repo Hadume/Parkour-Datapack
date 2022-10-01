@@ -1,6 +1,6 @@
 {
     "values": [
         "#wooden_fences",
-        "minecraft:nether_brick_fence"
+        "nether_brick_fence"
     ]
 }

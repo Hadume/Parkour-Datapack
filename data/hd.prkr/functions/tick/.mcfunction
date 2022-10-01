@@ -2,7 +2,7 @@
 #
 # 常時実行
 #
-# @within tag/function minecraft:tick
+# @within tag/function tick
 
 #> Tags
 # @private

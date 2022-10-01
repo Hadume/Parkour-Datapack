@@ -1,6 +1,6 @@
 {
     "values": [
-        "minecraft:lava",
-        "minecraft:flowing_lava"
+        "lava",
+        "flowing_lava"
     ]
 }

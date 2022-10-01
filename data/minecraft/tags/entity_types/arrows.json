@@ -1,6 +1,6 @@
 {
     "values": [
-        "minecraft:arrow",
-        "minecraft:spectral_arrow"
+        "arrow",
+        "spectral_arrow"
     ]
 }

@@ -1,13 +1,13 @@
 {
     "values": [
-        "minecraft:oak_fence",
-        "minecraft:acacia_fence",
-        "minecraft:dark_oak_fence",
-        "minecraft:spruce_fence",
-        "minecraft:birch_fence",
-        "minecraft:jungle_fence",
-        "minecraft:crimson_fence",
-        "minecraft:warped_fence",
-        "minecraft:mangrove_fence"
+        "oak_fence",
+        "acacia_fence",
+        "dark_oak_fence",
+        "spruce_fence",
+        "birch_fence",
+        "jungle_fence",
+        "crimson_fence",
+        "warped_fence",
+        "mangrove_fence"
     ]
 }
