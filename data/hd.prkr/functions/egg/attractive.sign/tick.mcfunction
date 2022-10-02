@@ -7,4 +7,4 @@
 ## 何も書かれていない状態へ
 	execute if entity @s[nbt={data:{HdP:{ASign:{Put:1b}}}}] unless block ~ ~ ~ #signs run data modify entity @s data.HdP.ASign.Put set value 0b
 ## 看板が置かれるのを待ってる
-	execute if entity @s[nbt={data:{HdP:{ASign:{Put:0b}}}}] run function hd.prkr:egg/attractive.sign/waiting
+	execute if entity @s[nbt={data:{HdP:{ASign:{Put:0b}}}}] if predicate hd.prkr:written.sign run function hd.prkr:egg/attractive.sign/
