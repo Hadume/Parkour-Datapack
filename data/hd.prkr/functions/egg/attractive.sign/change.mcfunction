@@ -9,3 +9,5 @@
 ## 文字色
 	execute if block ~ ~ ~ dark_oak_sign run data modify block ~ ~ ~ Color set value "white"
 	execute if block ~ ~ ~ dark_oak_wall_sign run data modify block ~ ~ ~ Color set value "white"
+	execute if block ~ ~ ~ birch_sign run data modify block ~ ~ ~ Color set value "black"
+	execute if block ~ ~ ~ birch_wall_sign run data modify block ~ ~ ~ Color set value "black"

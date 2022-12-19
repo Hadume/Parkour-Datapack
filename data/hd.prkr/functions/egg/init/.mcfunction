@@ -13,6 +13,9 @@
  #declare tag HdP.EndGateway
  #declare tag HdP.CGArea
  #declare tag HdP.ASign
+#> Tags
+# @within function prkr:**
+ #declare tag HdP.Remove
 ## それぞれのオブジェクトに対応するEntityを召喚
 	execute if entity @s[tag=HdP.Laser] run summon marker ~ ~ ~ {Tags:["HdP.Laser","HdP"],Rotation:[0.0f,0.0f]}
 	execute if entity @s[tag=HdP.Start] run function hd.prkr:egg/init/start

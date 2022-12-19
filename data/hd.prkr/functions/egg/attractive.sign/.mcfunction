@@ -9,6 +9,8 @@
 ## 看板更新
 	execute if data entity @s {data:{HdP:{ASign:{Enable:1b}}}} run function hd.prkr:egg/attractive.sign/change
 	execute if data entity @s {data:{HdP:{ASign:{Enable:0b}}}} run data modify block ~ ~ ~ {} merge value {GlowingText:0b,Color:"black"}
+## 看板クリック時の関数
+	function #prkr:sign.clicked
 ##
 	data modify block ~ ~ ~ Text1 set value '{"block":"~ ~ ~","nbt":"Text1","interpret":true,"clickEvent":{"action":"run_command","value":"/execute if entity @s[gamemode=creative] align xyz positioned ~0.5 ~ ~0.5 as @e[type=marker,tag=HdP.ASign,distance=..0.001] store success entity @s data.HdP.ASign.Enable byte 1 if data entity @s {data:{HdP:{ASign:{Enable:0b}}}}"}}'
 	data modify block ~ ~ ~ Text2 set value '{"block":"~ ~ ~","nbt":"Text2","interpret":true,"clickEvent":{"action":"run_command","value":"/execute if entity @s[gamemode=creative] align xyz positioned ~0.5 ~ ~0.5 if entity @e[type=marker,tag=HdP.ASign,distance=..0.001,nbt={data:{HdP:{ASign:{Enable:1b}}}}] run tellraw @s [{\\"text\\":\\"[パルクールシステム] \\"},{\\"text\\":\\"看板を見易くしました！\\",\\"color\\":\\"green\\"}]"}}'
