@@ -8,7 +8,6 @@
 #> Tags
 # @private
  #declare tag HdP.Start
- #declare tag HdP.Avoid.FallingDamage
 #> Tags
 # @private
 # @within function prkr:**
@@ -18,6 +17,7 @@
  #declare tag HdP.FireResistance
  #declare tag HdP.Invisibility
  #declare tag HdP.Weakness
+ #declare tag HdP.Avoid.FallingDamage
 ## アイテムを消す
 	clear @s
 ## エフェクトを消す
