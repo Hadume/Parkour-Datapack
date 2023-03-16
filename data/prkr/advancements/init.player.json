@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "trigger": {
+            "trigger": "tick"
+        }
+    },
+    "rewards": {
+        "function": "prkr:init.player"
+    }
+}

@@ -1,5 +1,6 @@
 {
     "values": [
-        "hd.prkr:load"
+        "hd.prkr:load",
+        "prkr:load"
     ]
 }
