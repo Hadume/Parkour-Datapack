@@ -16,4 +16,4 @@
 	execute if entity @s[x_rotation=90] as @e[type=marker,tag=HdP.This] at @s run tp @s ~ ~ ~ ~ 90
 	execute if entity @s[x_rotation=-90] as @e[type=marker,tag=HdP.This] at @s run tp @s ~ ~ ~ ~ -90
 ## 伝える
-	tellraw @s [{"text":"[パルクールシステム] "},{"text":"一番近くのオブジェクトの向きを変更しました。","color":"green"}]
+	tellraw @s [{"text":"\n[パルクールシステム] "},{"text":"一番近くのオブジェクトの向きを変更しました。","color":"green"}]

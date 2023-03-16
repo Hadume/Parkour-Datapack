@@ -15,4 +15,4 @@
 ## 音を鳴らす
 	execute if score $HdP.Success HdP.Temp matches 1 run playsound block.note_block.bass block @s ~ ~ ~ 1 0.5
 ## 伝える
-	execute if score $HdP.Success HdP.Temp matches 1 run tellraw @s [{"text":"[パルクールシステム] "},{"text":"一番近くのオブジェクトを削除しました。","color":"red"}]
+	execute if score $HdP.Success HdP.Temp matches 1 run tellraw @s [{"text":"\n[パルクールシステム] "},{"text":"一番近くのオブジェクトを削除しました。","color":"red"}]
