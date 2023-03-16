@@ -5,12 +5,14 @@
 #> Storage
 # @internal
  #declare storage prkr:
- #declare storage prkr:temp
+ #declare storage prkr.temp:
 ## 初期化完了
   data modify storage prkr: Init set value 1b
 #> Scoreboard
 # @internal
   scoreboard objectives add Global dummy
+  scoreboard objectives add Temp dummy
+  scoreboard objectives add Const dummy
   scoreboard objectives add Area dummy
 ## エリア初期化
   data modify storage prkr: Area.1 set value 0b

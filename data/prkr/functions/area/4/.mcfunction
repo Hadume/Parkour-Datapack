@@ -4,6 +4,9 @@
 #   prkr:tick
 #   prkr:area/4/player
 
+#> Tags
+# @within function prkr:area/4/**
+ #declare tag Area4
 ## エリアリセット
   function prkr:area/4/reset
 ## エリア状態設定
