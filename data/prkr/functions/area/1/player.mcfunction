@@ -13,4 +13,6 @@
 ## プレイヤーリセット
   function hd.prkr:reset/
 ## tp
+  execute if predicate hd.prkr:reset
+  execute if entity @s[tag=HdP.Reset]
 ## アイテム渡す

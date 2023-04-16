@@ -8,8 +8,6 @@
 # @private
 # @within function hd.prkr:egg/kill
  #declare score_holder $HdP.Success
-## 進捗を剥奪
-	advancement revoke @s only hd.prkr:offhand
 ## オフハンドをコピー
 	data modify storage hd.p: OffHandCopy set from entity @s Inventory[{Slot:-106b}]
 ## オフハンドが卵だったら
@@ -23,3 +21,5 @@
 	scoreboard players reset $HdP.Success
 ## 一時使用Storageをリセット
 	data remove storage hd.p: OffHandCopy
+## 進捗を剥奪
+	advancement revoke @s only hd.prkr:offhand

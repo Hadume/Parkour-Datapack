@@ -19,7 +19,7 @@
     execute unless data storage prkr: {Area:{4:0b}} run function prkr:area/4/tick
     execute unless data storage prkr: {Area:{5:0b}} run function prkr:area/5/tick
 ## プレイヤーを見る
-  execute as @e[tag=LookingPlayer] at @s facing entity @p feet run tp @s ~ ~ ~ ~ ~
+  execute as @e[tag=LookingPlayer] at @s anchored eyes facing entity @p eyes anchored feet run tp @s ~ ~ ~ ~ ~
 ## リセット
   execute as @a[gamemode=adventure] at @s if predicate hd.prkr:reset run function prkr:reset
 ## リセット

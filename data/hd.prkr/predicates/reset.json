@@ -46,6 +46,20 @@
                     }
                 }
             }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Tags:[\"HdP.Dead\"]}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Tags:[\"HdP.Sign.Clicked\"]}"
+            }
         }
     ]
 }
