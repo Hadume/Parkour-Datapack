@@ -7,7 +7,13 @@
 #> Tags
 # @within function prkr:area/4/**
  #declare tag Area4
+#> ScoreHolder
+# @within function
+#   prkr:area/4/**
+#   prkr:tick
+#   prkr:init
+ #declare score_holder $Area.4
 ## エリアリセット
   function prkr:area/4/reset
 ## エリア状態設定
-  data modify storage prkr: Area.4 set value 1b
+  scoreboard players set $Area.4 Global 2

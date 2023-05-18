@@ -1,14 +1,14 @@
-#> prkr:area/1/player
-# エリア１プレイヤー
+#> prkr:area/6/player
+# エリア６プレイヤー
 # @within function
 #   prkr:sign.clicked
-#   prkr:area/1/tick
+#   prkr:area/6/tick
 #   prkr:reset
 
 ## エリアリセット
-  function prkr:area/1/
+  function prkr:area/6/
 ## スコア設定
-  scoreboard players set @s Area 10
+  scoreboard players set @s Area 60
 ## プレイヤーリセット
   function hd.prkr:reset/
 ## tp

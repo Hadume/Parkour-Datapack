@@ -15,8 +15,11 @@
   scoreboard objectives add Const dummy
   scoreboard objectives add Area dummy
 ## エリア初期化
-  data modify storage prkr: Area.1 set value 0b
-  data modify storage prkr: Area.2 set value 0b
-  data modify storage prkr: Area.3 set value 0b
-  data modify storage prkr: Area.4 set value 0b
-  data modify storage prkr: Area.5 set value 0b
+  scoreboard players set $Area.1 Global 0
+  scoreboard players set $Area.2 Global 0
+  scoreboard players set $Area.3 Global 0
+  scoreboard players set $Area.4 Global 0
+  scoreboard players set $Area.5 Global 0
+  scoreboard players set $Area.6 Global 0
+  scoreboard players set $Area.7 Global 0
+  scoreboard players set $Area.8 Global 0

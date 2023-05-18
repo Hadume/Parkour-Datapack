@@ -5,7 +5,7 @@
 #   prkr:area/4/
 
 ## エリア状態リセット
-  data modify storage prkr: Area.4 set value 0b
+  scoreboard players set $Area.4 Global 0
 ## ブロック削除
   execute as @e[type=marker,tag=HdP.Remove] at @s if predicate prkr:area/4 unless block ~ ~ ~ air run setblock ~ ~ ~ air
 ## ブロック設置

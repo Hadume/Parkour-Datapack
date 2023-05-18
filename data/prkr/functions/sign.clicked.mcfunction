@@ -8,3 +8,6 @@
   execute if data block ~ ~ ~ {x:0,y:0,z:0} at @s run function prkr:area/3/player
   execute if data block ~ ~ ~ {x:0,y:0,z:0} at @s run function prkr:area/4/player
   execute if data block ~ ~ ~ {x:0,y:0,z:0} at @s run function prkr:area/5/player
+  execute if data block ~ ~ ~ {x:0,y:0,z:0} at @s run function prkr:area/6/player
+  execute if data block ~ ~ ~ {x:0,y:0,z:0} at @s run function prkr:area/7/player
+  execute if data block ~ ~ ~ {x:0,y:0,z:0} at @s run function prkr:area/8/player
