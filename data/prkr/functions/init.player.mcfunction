@@ -1,4 +1,4 @@
-#> prkr:init.players
+#> prkr:init.player
 # プレイヤーを初期化
 # @within advancement prkr:init.player
 
