@@ -27,31 +27,44 @@
  #declare score_holder $HdP.Const.2^16
 	scoreboard players set $HdP.Const.31743 HdP.Const 31743
 	scoreboard players set $HdP.Const.2^16 HdP.Const 65536
-## VanillaDatapackを無効化
-	datapack disable "vanilla"
 ## Gamerule
+	gamerule announceAdvancements false
+	gamerule commandBlockOutput false
+	gamerule commandModificationBlockLimit 2147483647
+	gamerule disableRaids true
+	gamerule doDaylightCycle false
+	gamerule doEntityDrops false
+	gamerule doFireTick false
+	gamerule doImmediateRespawn true
+	gamerule doInsomnia false
+	gamerule doLimitedCrafting true
 	gamerule doMobLoot false
 	gamerule doMobSpawning false
-	gamerule doDaylightCycle false
-	gamerule doWeatherCycle false
-	gamerule randomTickSpeed 0
-	gamerule doFireTick false
-	gamerule commandBlockOutput false
-	gamerule spawnRadius 0
-	gamerule spectatorsGenerateChunks false
-	gamerule doImmediateRespawn true
-	gamerule freezeDamage false
-	gamerule showDeathMessages false
-	gamerule keepInventory true
+	gamerule doPatrolSpawning false
 	gamerule doTileDrops false
+	gamerule doTraderSpawning false
+	gamerule doVinesSpread false
+	gamerule doWardenSpawning false
+	gamerule doWeatherCycle false
+	gamerule drowningDamage false
+	gamerule fireDamage false
+	gamerule freezeDamage false
+	gamerule keepInventory true
+	gamerule lavaSourceConversion true
+	gamerule maxCommandChainLength 2147483647
+	gamerule maxEntityCramming 2147483647
 	gamerule mobGriefing false
-	gamerule doLimitedCrafting true
+	gamerule naturalRegeneration false
+	gamerule randomTickSpeed 0
+	gamerule showDeathMessages false
+	gamerule spawnRadius 0
+	gamerule tntExplosionDropDecay true
 ## Gamemode
 	defaultgamemode adventure
 ## Difficulty
 	difficulty peaceful
 ## Time
-	time set 6000
+	time set 6000t
 ## Scheduleをする
 	schedule clear hd.prkr:5.tick
 	function hd.prkr:5.tick
