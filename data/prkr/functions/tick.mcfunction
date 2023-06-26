@@ -8,13 +8,13 @@
 ## エリア
   ### 読み込み開始
     execute if score $Area.1 Global matches 0 if entity @a[predicate=prkr:area/1] store success score $Area.1 Global run scoreboard players add $Area.1.Loaded Global 1
-    execute if score $Area.2 Global matches 0 if entity @a[predicate=prkr:area/2] store success score $Area.1 Global run scoreboard players add $Area.2.Loaded Global 1
-    execute if score $Area.3 Global matches 0 if entity @a[predicate=prkr:area/3] store success score $Area.1 Global run scoreboard players add $Area.3.Loaded Global 1
-    execute if score $Area.4 Global matches 0 if entity @a[predicate=prkr:area/4] store success score $Area.1 Global run scoreboard players add $Area.4.Loaded Global 1
-    execute if score $Area.5 Global matches 0 if entity @a[predicate=prkr:area/5] store success score $Area.1 Global run scoreboard players add $Area.5.Loaded Global 1
-    execute if score $Area.6 Global matches 0 if entity @a[predicate=prkr:area/6] store success score $Area.1 Global run scoreboard players add $Area.6.Loaded Global 1
-    execute if score $Area.7 Global matches 0 if entity @a[predicate=prkr:area/7] store success score $Area.1 Global run scoreboard players add $Area.7.Loaded Global 1
-    execute if score $Area.8 Global matches 0 if entity @a[predicate=prkr:area/8] store success score $Area.1 Global run scoreboard players add $Area.8.Loaded Global 1
+    execute if score $Area.2 Global matches 0 if entity @a[predicate=prkr:area/2] store success score $Area.2 Global run scoreboard players add $Area.2.Loaded Global 1
+    execute if score $Area.3 Global matches 0 if entity @a[predicate=prkr:area/3] store success score $Area.3 Global run scoreboard players add $Area.3.Loaded Global 1
+    execute if score $Area.4 Global matches 0 if entity @a[predicate=prkr:area/4] store success score $Area.4 Global run scoreboard players add $Area.4.Loaded Global 1
+    execute if score $Area.5 Global matches 0 if entity @a[predicate=prkr:area/5] store success score $Area.5 Global run scoreboard players add $Area.5.Loaded Global 1
+    execute if score $Area.6 Global matches 0 if entity @a[predicate=prkr:area/6] store success score $Area.6 Global run scoreboard players add $Area.6.Loaded Global 1
+    execute if score $Area.7 Global matches 0 if entity @a[predicate=prkr:area/7] store success score $Area.7 Global run scoreboard players add $Area.7.Loaded Global 1
+    execute if score $Area.8 Global matches 0 if entity @a[predicate=prkr:area/8] store success score $Area.8 Global run scoreboard players add $Area.8.Loaded Global 1
   ### 初期化
     execute if score $Area.1 Global matches 1 as @e[type=marker,tag=Area.1] unless score @s Area = $Area.1.Loaded Global run function prkr:area/1/
     execute if score $Area.2 Global matches 1 as @e[type=marker,tag=Area.2] unless score @s Area = $Area.2.Loaded Global run function prkr:area/2/

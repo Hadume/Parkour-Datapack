@@ -17,17 +17,19 @@
  #declare tag HdP.FireResistance
  #declare tag HdP.Invisibility
  #declare tag HdP.Weakness
+ #declare tag HdP.Levitation
  #declare tag HdP.Avoid.FallingDamage
 ## アイテムを消す
 	clear @s
 ## エフェクトを消す
 	effect clear @s
 ## エフェクトを付けなおす
-	execute if entity @s[tag=HdP.NightVision] run effect give @s night_vision 1000000 0 true
-	execute if entity @s[tag=HdP.DolphinsGrace] run effect give @s dolphins_grace 1000000 255 true
-	execute if entity @s[tag=HdP.FireResistance] run effect give @s fire_resistance 1000000 0 true
-	execute if entity @s[tag=HdP.Invisibility] run effect give @s invisibility 1000000 0 true
-	execute if entity @s[tag=HdP.Weakness] run effect give @s weakness 1000000 255 true
+	execute if entity @s[tag=HdP.NightVision] run effect give @s night_vision infinite 0 true
+	execute if entity @s[tag=HdP.DolphinsGrace] run effect give @s dolphins_grace infinite 255 true
+	execute if entity @s[tag=HdP.FireResistance] run effect give @s fire_resistance infinite 0 true
+	execute if entity @s[tag=HdP.Invisibility] run effect give @s invisibility infinite 0 true
+	execute if entity @s[tag=HdP.Weakness] run effect give @s weakness infinite 255 true
+	execute if entity @s[tag=HdP.Levitation] run effect give @s levitation infinite 255 true
 ## 体力空腹回復
 	effect give @s instant_health 1 200 true
 	effect give @s saturation 1 200 true

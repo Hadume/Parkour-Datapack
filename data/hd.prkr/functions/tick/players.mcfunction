@@ -27,6 +27,7 @@
 	### リセット
 		#### 状態解除
 			execute if entity @s[tag=HdP.Reset] run tag @s remove HdP.Reset
+			execute if entity @s[tag=HdP.Dead] run tag @s remove HdP.Dead
 		#### タグ追加
 			execute if score @s HdP.Dropped.Paper matches 1.. run function hd.prkr:reset/dropped.paper
 			execute if score @s HdP.DeathCount matches 1.. run function hd.prkr:reset/death.count

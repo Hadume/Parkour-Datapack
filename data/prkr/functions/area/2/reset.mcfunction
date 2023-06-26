@@ -11,6 +11,5 @@
 ## ブロック設置
 ## MOB削除
   execute as @e[type=item] at @s if predicate prkr:area/2 run kill @s
-  execute as @e[tag=Area2] at @s run tp @s ~ -3000 ~
-  execute as @e[tag=Area2] at @s run kill @s
+  execute as @e[tag=Area2] at @s run function prkr:area/kill
 ## スケジュール解消

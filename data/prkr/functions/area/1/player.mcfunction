@@ -4,6 +4,7 @@
 #   prkr:sign.clicked
 #   prkr:area/1/tick
 #   prkr:reset
+#   prkr:tick
 
 ## エリアリセット
   function prkr:area/1/
