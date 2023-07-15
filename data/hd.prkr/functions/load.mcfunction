@@ -1,7 +1,5 @@
 #> hd.prkr:load
-#
 # リロード時実行
-#
 # @within tag/function load
 
 ## 初期化

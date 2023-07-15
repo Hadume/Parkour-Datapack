@@ -1,7 +1,5 @@
 #> hd.prkr:egg/gamemode.area/particle
-#
 # ゲームモード変更エリア
-#
 # @within function hd.prkr:tick/
 
 ##

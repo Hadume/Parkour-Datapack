@@ -1,7 +1,5 @@
-#> hd.prkr:coas/temp.block/couldnt
-#
+#> hd.prkr:coas/temp.block/set/couldnt
 # 仮ブロックを設置出来なかったら
-#
 # @within function hd.prkr:coas/used
 
 ## 伝える

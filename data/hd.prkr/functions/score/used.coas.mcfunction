@@ -1,4 +1,4 @@
-#> hd.prkr:used.coas
+#> hd.prkr:score/used.coas
 # ニンジン棒を使ったら
 # @within function hd.prkr:tick/players
 

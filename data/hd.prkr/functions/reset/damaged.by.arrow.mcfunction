@@ -1,7 +1,5 @@
 #> hd.prkr:reset/damaged.by.arrow
-#
 # 矢を喰らったらリセット
-#
 # @within advancement hd.prkr:damaged.by.arrow
 
 ## リセットタグを追加

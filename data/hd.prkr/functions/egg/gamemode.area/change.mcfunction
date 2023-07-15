@@ -1,7 +1,5 @@
 #> hd.prkr:egg/gamemode.area/change
-#
 # ゲームモード変更
-#
 # @within function hd.prkr:tick/players
 
 #> Tags

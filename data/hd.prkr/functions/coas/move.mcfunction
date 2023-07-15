@@ -1,12 +1,6 @@
 #> hd.prkr:coas/move
-#
 # 視点先へ移動
-#
 # @within function hd.prkr:coas/used
-
-
-### 赤石愛さんのものを参考にさせていただきました
-
 
 #> Tags
 # @private

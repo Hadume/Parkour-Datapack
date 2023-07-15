@@ -1,7 +1,5 @@
 #> hd.prkr:egg/init/start
-#
 # スタートのオブジェクト
-#
 # @within function hd.prkr:egg/init/
 
 #> Tags

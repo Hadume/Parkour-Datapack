@@ -1,7 +1,5 @@
-#> hd.prkr:coas/temp.block/set
-#
+#> hd.prkr:coas/temp.block/set/
 # 仮ブロックを設置
-#
 # @within function hd.prkr:coas/used
 
 #> Tags

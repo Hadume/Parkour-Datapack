@@ -1,14 +1,78 @@
 #> hd.prkr:lib/rand/
-#
 # 疑似乱数
-#
 # @within function prkr:**
 
-##
-	scoreboard players operation $Rand.Current HdP.Global *= $HdP.Const.31743 HdP.Const
-	scoreboard players operation $Rand.Current HdP.Global += $Rand.Carry HdP.Global
-	scoreboard players operation $Rand.Carry HdP.Global = $Rand.Current HdP.Global
-	scoreboard players operation $Rand.Current HdP.Global %= $HdP.Const.2^16 HdP.Const
-	scoreboard players operation $Rand.Carry HdP.Global /= $HdP.Const.2^16 HdP.Const
-## 値を取得
-	scoreboard players get $Rand.Carry HdP.Global
+
+### 赤石愛様のものを参考にさせていただきました
+
+
+#> ScoreHolder
+# @private
+# @within function prkr:**
+ #declare score_holder $HdP.Rand
+## 
+	scoreboard players set $HdP.Rand HdP.Global 0
+	execute if predicate hd.prkr:chance/0.5 run scoreboard players add $HdP.Rand HdP.Global 1
+	scoreboard players operation $HdP.Rand HdP.Global += $HdP.Rand HdP.Global
+	execute if predicate hd.prkr:chance/0.5 run scoreboard players add $HdP.Rand HdP.Global 1
+	scoreboard players operation $HdP.Rand HdP.Global += $HdP.Rand HdP.Global
+	execute if predicate hd.prkr:chance/0.5 run scoreboard players add $HdP.Rand HdP.Global 1
+	scoreboard players operation $HdP.Rand HdP.Global += $HdP.Rand HdP.Global
+	execute if predicate hd.prkr:chance/0.5 run scoreboard players add $HdP.Rand HdP.Global 1
+	scoreboard players operation $HdP.Rand HdP.Global += $HdP.Rand HdP.Global
+	execute if predicate hd.prkr:chance/0.5 run scoreboard players add $HdP.Rand HdP.Global 1
+	scoreboard players operation $HdP.Rand HdP.Global += $HdP.Rand HdP.Global
+	execute if predicate hd.prkr:chance/0.5 run scoreboard players add $HdP.Rand HdP.Global 1
+	scoreboard players operation $HdP.Rand HdP.Global += $HdP.Rand HdP.Global
+	execute if predicate hd.prkr:chance/0.5 run scoreboard players add $HdP.Rand HdP.Global 1
+	scoreboard players operation $HdP.Rand HdP.Global += $HdP.Rand HdP.Global
+	execute if predicate hd.prkr:chance/0.5 run scoreboard players add $HdP.Rand HdP.Global 1
+	scoreboard players operation $HdP.Rand HdP.Global += $HdP.Rand HdP.Global
+	execute if predicate hd.prkr:chance/0.5 run scoreboard players add $HdP.Rand HdP.Global 1
+	scoreboard players operation $HdP.Rand HdP.Global += $HdP.Rand HdP.Global
+	execute if predicate hd.prkr:chance/0.5 run scoreboard players add $HdP.Rand HdP.Global 1
+
+	scoreboard players operation $HdP.Rand HdP.Global += $HdP.Rand HdP.Global
+	execute if predicate hd.prkr:chance/0.5 run scoreboard players add $HdP.Rand HdP.Global 1
+	scoreboard players operation $HdP.Rand HdP.Global += $HdP.Rand HdP.Global
+	execute if predicate hd.prkr:chance/0.5 run scoreboard players add $HdP.Rand HdP.Global 1
+	scoreboard players operation $HdP.Rand HdP.Global += $HdP.Rand HdP.Global
+	execute if predicate hd.prkr:chance/0.5 run scoreboard players add $HdP.Rand HdP.Global 1
+	scoreboard players operation $HdP.Rand HdP.Global += $HdP.Rand HdP.Global
+	execute if predicate hd.prkr:chance/0.5 run scoreboard players add $HdP.Rand HdP.Global 1
+	scoreboard players operation $HdP.Rand HdP.Global += $HdP.Rand HdP.Global
+	execute if predicate hd.prkr:chance/0.5 run scoreboard players add $HdP.Rand HdP.Global 1
+	scoreboard players operation $HdP.Rand HdP.Global += $HdP.Rand HdP.Global
+	execute if predicate hd.prkr:chance/0.5 run scoreboard players add $HdP.Rand HdP.Global 1
+	scoreboard players operation $HdP.Rand HdP.Global += $HdP.Rand HdP.Global
+	execute if predicate hd.prkr:chance/0.5 run scoreboard players add $HdP.Rand HdP.Global 1
+	scoreboard players operation $HdP.Rand HdP.Global += $HdP.Rand HdP.Global
+	execute if predicate hd.prkr:chance/0.5 run scoreboard players add $HdP.Rand HdP.Global 1
+	scoreboard players operation $HdP.Rand HdP.Global += $HdP.Rand HdP.Global
+	execute if predicate hd.prkr:chance/0.5 run scoreboard players add $HdP.Rand HdP.Global 1
+	scoreboard players operation $HdP.Rand HdP.Global += $HdP.Rand HdP.Global
+	execute if predicate hd.prkr:chance/0.5 run scoreboard players add $HdP.Rand HdP.Global 1
+
+	scoreboard players operation $HdP.Rand HdP.Global += $HdP.Rand HdP.Global
+	execute if predicate hd.prkr:chance/0.5 run scoreboard players add $HdP.Rand HdP.Global 1
+	scoreboard players operation $HdP.Rand HdP.Global += $HdP.Rand HdP.Global
+	execute if predicate hd.prkr:chance/0.5 run scoreboard players add $HdP.Rand HdP.Global 1
+	scoreboard players operation $HdP.Rand HdP.Global += $HdP.Rand HdP.Global
+	execute if predicate hd.prkr:chance/0.5 run scoreboard players add $HdP.Rand HdP.Global 1
+	scoreboard players operation $HdP.Rand HdP.Global += $HdP.Rand HdP.Global
+	execute if predicate hd.prkr:chance/0.5 run scoreboard players add $HdP.Rand HdP.Global 1
+	scoreboard players operation $HdP.Rand HdP.Global += $HdP.Rand HdP.Global
+	execute if predicate hd.prkr:chance/0.5 run scoreboard players add $HdP.Rand HdP.Global 1
+	scoreboard players operation $HdP.Rand HdP.Global += $HdP.Rand HdP.Global
+	execute if predicate hd.prkr:chance/0.5 run scoreboard players add $HdP.Rand HdP.Global 1
+	scoreboard players operation $HdP.Rand HdP.Global += $HdP.Rand HdP.Global
+	execute if predicate hd.prkr:chance/0.5 run scoreboard players add $HdP.Rand HdP.Global 1
+	scoreboard players operation $HdP.Rand HdP.Global += $HdP.Rand HdP.Global
+	execute if predicate hd.prkr:chance/0.5 run scoreboard players add $HdP.Rand HdP.Global 1
+	scoreboard players operation $HdP.Rand HdP.Global += $HdP.Rand HdP.Global
+	execute if predicate hd.prkr:chance/0.5 run scoreboard players add $HdP.Rand HdP.Global 1
+	scoreboard players operation $HdP.Rand HdP.Global += $HdP.Rand HdP.Global
+	execute if predicate hd.prkr:chance/0.5 run scoreboard players add $HdP.Rand HdP.Global 1
+
+	scoreboard players operation $HdP.Rand HdP.Global += $HdP.Rand HdP.Global
+	execute if predicate hd.prkr:chance/0.5 run scoreboard players add $HdP.Rand HdP.Global 1

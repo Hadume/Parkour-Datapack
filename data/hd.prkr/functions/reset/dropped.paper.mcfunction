@@ -1,7 +1,5 @@
 #> hd.prkr:reset/dropped.paper
-#
 # 紙を落としたら
-#
 # @within function hd.prkr:tick/players
 
 ## リセットタグを追加

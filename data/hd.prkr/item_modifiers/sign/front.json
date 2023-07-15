@@ -1,0 +1,9 @@
+{
+  "function": "set_name",
+  "entity": "this",
+  "name": {
+    "block": "~ ~ ~",
+    "nbt": "front_text.messages[-1]",
+    "interpret": true
+  }
+}

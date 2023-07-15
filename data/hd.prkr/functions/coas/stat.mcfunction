@@ -1,7 +1,5 @@
 #> hd.prkr:coas/stat
-#
 # ニンジン棒の状態を変更
-#
 # @within function hd.prkr:offhand
 
 ## スコアを追加

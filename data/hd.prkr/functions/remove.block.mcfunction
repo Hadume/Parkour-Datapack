@@ -1,7 +1,5 @@
 #> hd.prkr:remove.block
-#
 # ブロックを削除
-#
 # @within function hd.prkr:tick/
 
 ## 時間経過

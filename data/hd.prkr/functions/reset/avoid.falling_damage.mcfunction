@@ -1,7 +1,5 @@
 #> hd.prkr:reset/avoid.falling_damage
 #
-#
-#
 # @within function hd.prkr:reset/
 
 #> Tags

@@ -1,7 +1,5 @@
 #> hd.prkr:reset/death.count
-#
 # 死んだら
-#
 # @within function hd.prkr:tick/players
 
 #> Tags

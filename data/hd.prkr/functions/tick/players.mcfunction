@@ -1,7 +1,5 @@
 #> hd.prkr:tick/players
-#
 # プレイヤーで常時実行
-#
 # @within function hd.prkr:tick/
 
 #> Tags
@@ -11,17 +9,13 @@
 #   hd.prkr:reset/*
  #declare tag HdP.Reset
  #declare tag HdP.CGArea
-## ギミック用
-	### レーザーの音を鳴らす
-		execute if entity @s[tag=HdP.Warn] run playsound block.note_block.bit block @s ~ ~ ~ 0.75 2
-
 ## 設計用
 	## メインハンドに卵を持っていたら
 		execute if data entity @s {SelectedItem:{tag:{HdP:{Debug:1b}}}} run function hd.prkr:egg/particle
 	## スニークしていたら
-		execute if score @s HdP.SneakTime matches 1.. run function hd.prkr:sneak.time
+		execute if score @s HdP.SneakTime matches 1.. run function hd.prkr:score/sneak.time
 	## ニンジン棒を使ったら
-		execute if score @s HdP.Used.COAS matches 1.. run function hd.prkr:used.coas
+		execute if score @s HdP.Used.COAS matches 1.. run function hd.prkr:score/used.coas
 
 ## その他
 	### リセット
@@ -35,6 +29,6 @@
 		execute unless data entity @s {XpP:0.0f} run experience set @s 0 points
 		execute unless entity @s[level=0] run experience set @s 0 levels
 	### リセット紙を渡す
-		execute if entity @s[gamemode=adventure] unless data entity @s Inventory[{Slot:17b,tag:{HdP:{Reset:1b}}}] run item replace entity @s inventory.8 with paper{display:{Name:'{"text":"パルクールリセット紙","color":"aqua","bold": true,"italic":false}',Lore:['[{"text":"捨てる","color":"gold","bold":true,"italic":false},{"text":"とパルクールのスタート地点に戻れるよ","color":"white","bold":false}]']},HdP:{Reset:1b}}
+		execute if entity @s[gamemode=adventure,nbt=!{Inventory:[{Slot:17b,tag:{HdP:{Reset:1b}}}]}] run item replace entity @s inventory.8 with paper{display:{Name:'{"text":"パルクールリセット紙","color":"aqua","bold": true,"italic":false}',Lore:['[{"text":"捨てる","color":"gold","bold":true,"italic":false},{"text":"とパルクールのスタート地点に戻れるよ","color":"white","bold":false}]']},HdP:{Reset:1b}}
 	### ゲームモードを変更
 		execute if entity @e[type=marker,tag=HdP.CGArea,distance=..0.75] run function hd.prkr:egg/gamemode.area/change

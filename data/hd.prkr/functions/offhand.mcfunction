@@ -1,7 +1,5 @@
 #> hd.prkr:offhand
-#
 # オフハンドにアイテムを持ったら
-#
 # @within advancement hd.prkr:offhand
 
 #> ScoreHolder

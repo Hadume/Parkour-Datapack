@@ -1,7 +1,5 @@
 #> hd.prkr:coas/temp.block/tick
-#
 # 仮ブロック
-#
 # @within function hd.prkr:tick/
 
 ## スコアを増加

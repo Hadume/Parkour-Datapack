@@ -1,7 +1,5 @@
 #> hd.prkr:init
-#
 # 初期化
-#
 # @within function hd.prkr:load
 
 #> Storage
@@ -65,10 +63,3 @@
 	difficulty peaceful
 ## Time
 	time set 6000t
-## Scheduleをする
-	schedule clear hd.prkr:5.tick
-	function hd.prkr:5.tick
-## 疑似乱数初期化
-	forceload add 0 0 0 0
-	summon marker 0 0 0 {Tags:["HdP.Marker"]}
-	schedule function hd.prkr:lib/rand/init 10t

@@ -1,13 +1,10 @@
 #> hd.prkr:egg/init/
-#
 # オブジェクトを初期化
-#
 # @within function hd.prkr:tick/
 
 #> Tags
 # @within function hd.prkr:egg/**
  #declare tag HdP
- #declare tag HdP.Laser
  #declare tag HdP.Start
  #declare tag HdP.Remove
  #declare tag HdP.EndGateway
@@ -17,7 +14,6 @@
 # @within function prkr:**
  #declare tag HdP.Remove
 ## それぞれのオブジェクトに対応するEntityを召喚
-	execute if entity @s[tag=HdP.Laser] run summon marker ~ ~ ~ {Tags:["HdP.Laser","HdP"],Rotation:[0.0f,0.0f]}
 	execute if entity @s[tag=HdP.Start] run function hd.prkr:egg/init/start
 	execute if entity @s[tag=HdP.Remove] run summon marker ~ ~ ~ {Tags:["HdP.Remove","HdP"],Rotation:[0.0f,0.0f]}
 	execute if entity @s[tag=HdP.CGArea] run summon marker ~ ~ ~ {Tags:["HdP.CGArea","HdP"],Rotation:[0.0f,0.0f],data:{HdP:{Gamemode:1b}}}

@@ -1,7 +1,5 @@
 #> hd.prkr:egg/change/gamemode
-#
 # ゲームモードの情報を変える
-#
 # @within function hd.prkr:egg/change/
 
 ## 近くのオブジェクトにTagを付ける
