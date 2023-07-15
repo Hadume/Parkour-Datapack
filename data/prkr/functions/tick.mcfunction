@@ -33,8 +33,6 @@
     execute unless score $Area.6 Global matches 0..1 run function prkr:area/6/tick
     execute unless score $Area.7 Global matches 0..1 run function prkr:area/7/tick
     execute unless score $Area.8 Global matches 0..1 run function prkr:area/8/tick
-## プレイヤーを見る
-  execute as @e[tag=LookingPlayer] at @s anchored eyes facing entity @p eyes anchored feet run tp @s ~ ~ ~ ~ ~
 ## リセット
   execute as @a[gamemode=adventure] at @s if predicate hd.prkr:reset run function prkr:reset
 ## リセット

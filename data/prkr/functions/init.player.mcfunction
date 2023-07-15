@@ -10,4 +10,4 @@
   #tag @s add HdP.Weakness
   #tag @s add HdP.Levitation
 ## スポーン地点
-  spawnpoint @s 0 0 0 0
+  #spawnpoint @s 0 0 0 0

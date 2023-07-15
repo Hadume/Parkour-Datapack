@@ -11,6 +11,9 @@
 ## プレイヤーで常時実行
 	execute as @a at @s run function hd.prkr:tick/players
 
+## MOBがプレイヤーを見る
+  execute as @e[tag=LookingPlayer] at @s anchored eyes facing entity @p eyes anchored feet run tp @s ~ ~ ~ ~ ~
+
 ## 設計用
 	## オブジェクト設置
 		execute as @e[type=armor_stand,tag=HdP] at @s run function hd.prkr:egg/init/
