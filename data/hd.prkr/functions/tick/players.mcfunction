@@ -21,7 +21,7 @@
 	## スニークしていたら
 		execute if score @s HdP.SneakTime matches 1.. run function hd.prkr:sneak.time
 	## ニンジン棒を使ったら
-		execute if score @s HdP.Used.COAS matches 1.. run function hd.prkr:coas/used
+		execute if score @s HdP.Used.COAS matches 1.. run function hd.prkr:used.coas
 
 ## その他
 	### リセット

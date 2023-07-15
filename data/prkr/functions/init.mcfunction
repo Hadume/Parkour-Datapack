@@ -6,6 +6,9 @@
 # @internal
  #declare storage prkr:
  #declare storage prkr.temp:
+#> Tags
+# @internal
+ #declare tag Init
 ## 初期化完了
   data modify storage prkr: Init set value 1b
 #> Scoreboard
