@@ -7,7 +7,13 @@
     "sky_color": 8103167,
     "fog_color": 12638463,
     "water_color": 4159204,
-    "water_fog_color": 329011
+    "water_fog_color": 329011,
+    "particle": {
+      "probability": 0.0005,
+      "options": {
+        "type": "effect"
+      }
+    }
   },
   "spawners": {},
   "spawn_costs": {},
