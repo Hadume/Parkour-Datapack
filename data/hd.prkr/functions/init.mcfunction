@@ -60,6 +60,6 @@
 ## Gamemode
 	defaultgamemode adventure
 ## Difficulty
-	difficulty peaceful
+	difficulty hard
 ## Time
 	time set 6000t
