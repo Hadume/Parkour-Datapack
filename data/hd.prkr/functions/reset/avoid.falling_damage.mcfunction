@@ -1,10 +1,7 @@
 #> hd.prkr:reset/avoid.falling_damage
-#
+# 落下ダメージを回避
 # @within function hd.prkr:reset/
 
-#> Tags
-# @private
- #declare tag HdP.Avoid.FallingDamage
 ## 効果を消す
   execute as @a[tag=HdP.Avoid.FallingDamage] run effect clear @s slow_falling
 ## Tagを外す

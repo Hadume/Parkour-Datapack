@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "stone",
+          "name": "id",
           "functions": [
             {
               "function": "set_name",
@@ -16,7 +16,7 @@
                   "italic": false
                 },
                 {
-                  "text": "",
+                  "text": "text",
                   "color": "yellow",
                   "bold": true,
                   "underlined": true
@@ -24,8 +24,12 @@
               ]
             },
             {
+              "function": "set_count",
+              "count": 1
+            },
+            {
               "function": "set_nbt",
-              "tag": "{Unbreakable:1b,CanDestroy:[],CanPlaceOn:[],RepairCost:-2147483648,AttributeModifiers:[],HideFlags:39,HdP:{}}"
+              "tag": "{Unbreakable:1b,CanDestroy:[\"\"],AttributeModifiers:[],CanPlaceOn:[\"\"],RepairCost:-2147483648,HideFlags:39,HdP:{}}"
             }
           ]
         }

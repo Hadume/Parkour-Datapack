@@ -2,7 +2,7 @@
 # エリア３初期化
 # @within function
 #   prkr:tick
-#   prkr:area/3/player
+#   prkr:area/3/player/player
 
 #> Tags
 # @within function prkr:area/3/**

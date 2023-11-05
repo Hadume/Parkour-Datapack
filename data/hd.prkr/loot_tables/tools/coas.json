@@ -1,0 +1,67 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "carrot_on_a_stick",
+					"functions": [
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": [
+								{
+									"text": "超・",
+									"color": "gold",
+									"bold": true,
+									"italic": false
+								},
+								{
+									"translate": "item.minecraft.carrot_on_a_stick",
+									"color": "yellow",
+									"bold": false
+								}
+							]
+						},
+						{
+							"function": "set_lore",
+							"entity": "this",
+							"lore": [
+								{
+									"text": "パルクール制作に役立ツール",
+									"color": "aqua",
+									"italic": false
+								},
+								{
+									"text": ""
+								},
+								[
+									{
+										"text": "オフハンドに持つ: ",
+										"color": "gray",
+										"italic": false
+									},
+									{
+										"text": "機能の切り替え ",
+										"color": "white"
+									}
+								],
+								{
+									"text": "\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020 \"移動 → ブロック設置\"",
+									"color": "white",
+									"bold": true,
+									"italic": false
+								}
+							]
+						},
+						{
+							"function": "set_nbt",
+							"tag": "{Unbreakable:1b,RepairCost:-2147483648,AttributeModifiers:[],HideFlags:39,Enchantments:[{id:\"\",lvl:0s}],HdP:{Debug:1b,COAS:1b}}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

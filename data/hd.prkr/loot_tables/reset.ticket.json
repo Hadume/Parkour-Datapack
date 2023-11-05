@@ -1,0 +1,56 @@
+{
+  "pools": [
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "paper",
+          "functions": [
+            {
+              "function": "set_name",
+              "entity": "this",
+              "name": [
+                {
+                  "text": "",
+                  "italic": false
+                },
+                {
+                  "text": "リセットチケット",
+                  "color": "aqua",
+                  "bold": true,
+                  "underlined": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "",
+                    "italic": false
+                  },
+                  {
+                    "text": "捨てる",
+                    "color": "gold",
+                    "bold": true
+                  },
+                  {
+                    "text": "とパルクールのスタート地点に戻れるよ",
+                    "color": "white"
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{RepairCost:-2147483648,HideFlags:39,HdP:{Reset:1b}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

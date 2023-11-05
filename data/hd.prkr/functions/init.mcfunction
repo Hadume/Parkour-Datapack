@@ -4,7 +4,6 @@
 
 #> Storage
 # @internal
-# @within function prkr:**
  #declare storage hd.p:
 ## 初期化完了
 	data modify storage hd.p: Init set value 1b
@@ -16,19 +15,15 @@
 	scoreboard objectives add HdP.Timer dummy {"text": "タイマー"}
 	scoreboard objectives add HdP.SneakTime custom:sneak_time {"text": "スニークしたら"}
 	scoreboard objectives add HdP.Used.COAS used:carrot_on_a_stick {"text": "ニンジン棒使ったら"}
-	scoreboard objectives add HdP.COAS.Stat dummy {"text": "ニンジン棒の状態"}
 	scoreboard objectives add HdP.Dropped.Paper dropped:paper {"text": "紙捨てたら"}
 	scoreboard objectives add HdP.DeathCount deathCount {"text": "死んだら"}
-#> ScoreHolder
-# @internal
- #declare score_holder $HdP.Const.31743
- #declare score_holder $HdP.Const.2^16
-	scoreboard players set $HdP.Const.31743 HdP.Const 31743
-	scoreboard players set $HdP.Const.2^16 HdP.Const 65536
+	scoreboard objectives add HdP.COAS.Stat dummy {"text": "ニンジン棒の状態"}
 ## Gamerule
 	gamerule announceAdvancements false
+	gamerule blockExplosionDropDecay false
 	gamerule commandBlockOutput false
 	gamerule commandModificationBlockLimit 2147483647
+	#gamerule disableElytraMovementCheck false
 	gamerule disableRaids true
 	gamerule doDaylightCycle false
 	gamerule doEntityDrops false
@@ -45,18 +40,30 @@
 	gamerule doWardenSpawning false
 	gamerule doWeatherCycle false
 	gamerule drowningDamage false
+	#gamerule fallDamage true
 	gamerule fireDamage false
+	#gamerule forgiveDeadPlayers true
 	gamerule freezeDamage false
+	#gamerule globalSoundEvents true
 	gamerule keepInventory true
 	gamerule lavaSourceConversion true
+	#gamerule logAdminCommands true
 	gamerule maxCommandChainLength 2147483647
 	gamerule maxEntityCramming 2147483647
+	gamerule mobExplosionDropDecay false
 	gamerule mobGriefing false
 	gamerule naturalRegeneration false
+	#gamerule playersSleepingPercentage 100
 	gamerule randomTickSpeed 0
+	#gamerule reducedDebugInfo false
+	#gamerule sendCommandFeedback true
 	gamerule showDeathMessages false
+	gamerule snowAccumulationHeight 0
 	gamerule spawnRadius 0
+	#gamerule spectatorsGenerateChunks true
 	gamerule tntExplosionDropDecay true
+	#gamerule universalAnger false
+	#gamerule waterSourceConversion true
 ## Gamemode
 	defaultgamemode adventure
 ## Difficulty

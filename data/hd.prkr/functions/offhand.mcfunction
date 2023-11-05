@@ -4,12 +4,12 @@
 
 #> ScoreHolder
 # @private
-# @within function hd.prkr:egg/kill
- #declare score_holder $HdP.Success
+# @within function hd.prkr:object/kill
+  #declare score_holder $HdP.Success
 ## オフハンドをコピー
 	data modify storage hd.p: OffHandCopy set from entity @s Inventory[{Slot:-106b}]
 ## オフハンドが卵だったら
-	execute if data storage hd.p: OffHandCopy.tag.HdP.Egg run function hd.prkr:egg/kill
+	execute if data storage hd.p: {OffHandCopy:{tag:{HdP:{Egg:1b}}}} run function hd.prkr:object/kill
 ## オフハンドがニンジン棒だったら
 	execute if data storage hd.p: OffHandCopy.tag.HdP.COAS run function hd.prkr:coas/stat
 ## アイテムを返す

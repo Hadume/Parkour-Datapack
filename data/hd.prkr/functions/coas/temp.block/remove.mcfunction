@@ -3,9 +3,9 @@
 # @within function hd.prkr:coas/temp.block/tick
 
 ##
-	execute unless block ~ ~ ~ air if entity @s[tag=HdP.TempBlock] run setblock ~ ~ ~ air
 	execute unless block ~ ~ ~ light[level=0] if entity @s[tag=HdP.TempBlock.Reset] run setblock ~ ~ ~ light[level=0]
 	execute unless block ~ ~ ~ light[level=1] if entity @s[tag=HdP.TempBlock.Reset.OnGround] run setblock ~ ~ ~ light[level=1]
+	execute unless block ~ ~ ~ air if entity @s[tag=!HdP.TempBlock.Reset,tag=!HdP.TempBlock.Reset.OnGround] run setblock ~ ~ ~ air
 ## シュルカーを削除
 	tp @s ~ -3000 ~
 	kill @s
