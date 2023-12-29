@@ -5,11 +5,10 @@
 #> Tags.Area
 # @within function
 #   prkr:tick
-#   prkr:init
- #declare tag Area.1
- #declare tag Area.2
- #declare tag Area.3
- #declare tag Area.4
+ #alias entity Area1 200-0-200-0-1
+ #alias entity Area2 200-0-200-0-2
+ #alias entity Area3 200-0-200-0-3
+ #alias entity Area4 200-0-200-0-4
 #> ScoreHolder.Area
 # @within function prkr:tick
  #declare score_holder $Area.1.Loaded

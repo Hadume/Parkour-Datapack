@@ -18,7 +18,10 @@
   scoreboard objectives add Const dummy
   scoreboard objectives add Area dummy
 ## エリア読み込み用Entity
-  #summon marker 0 0 0 {Tags:["Area.1"]}
+  #summon marker 0 0 0 {UUID:[I;256,256,0,1]}
+  #summon marker 0 0 0 {UUID:[I;256,256,0,2]}
+  #summon marker 0 0 0 {UUID:[I;256,256,0,3]}
+  #summon marker 0 0 0 {UUID:[I;256,256,0,4]}
 ## エリア初期化
   scoreboard players set $Area.1 Global 0
   scoreboard players set $Area.2 Global 0
