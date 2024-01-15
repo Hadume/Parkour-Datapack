@@ -10,7 +10,7 @@
   function prkr:area/1/
 ## tp
   execute if predicate hd.prkr:reset
-  execute if entity @s[tag=HdP.Reset]
+  execute if entity @s[tag=HdP.Restart]
 ## プレイヤーリセット
   function hd.prkr:reset/
 ## アイテム渡す

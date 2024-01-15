@@ -9,6 +9,9 @@
 #> Tags
 # @internal
  #declare tag Init
+#> Function
+# @internal
+ #declare predicate hd.prkr:reset
 ## 初期化完了
   data modify storage prkr: Init set value 1b
 #> Scoreboard

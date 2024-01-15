@@ -2,7 +2,7 @@
 # 簡単看板
 # @within function
 #   hd.prkr:object/attractive.sign/tick
-#   hd.prkr:object/attractive.sign/action/creative
+#   hd.prkr:object/attractive.sign/action/turn
 
 ## 看板置かれた
 	execute unless data entity @s {data:{HdP:{ASign:{Put:1b}}}} run data modify entity @s data.HdP.ASign.Put set value 1b

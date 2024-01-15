@@ -2,16 +2,23 @@
 # 
 # @within function hd.prkr:reset/
 
-#> Tags
+#> Tags.Reset
 # @within function
 #   hd.prkr:tick/player
 #   hd.prkr:score/dropped.paper
 #   hd.prkr:reset/damaged.by.arrow
 #   prkr:**
+# @within predicate hd.prkr:reset
  #declare tag HdP.Reset
-#> Tags
+#> Tags.Restart
 # @within function
-#   hd.prkr:reset/*
+#   hd.prkr:tick/player
+#   hd.prkr:reset/restart
+#   prkr:**
+ #declare tag HdP.Restart
+#> Tags.Effects
+# @within function
+#   hd.prkr:reset/
 #   prkr:**
  #declare tag HdP.NightVision
  #declare tag HdP.DolphinsGrace

@@ -51,7 +51,27 @@
             "condition": "entity_properties",
             "entity": "this",
             "predicate": {
+                "location": {
+                    "block": {
+                        "blocks": [
+                            "cobweb"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
                 "nbt": "{Tags:[\"HdP.Dead\"]}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Tags:[\"HdP.Reset\"]}"
             }
         },
         {

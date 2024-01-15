@@ -20,5 +20,5 @@
     execute unless score $Area.4 Global matches 0..1 run function prkr:area/4/tick
 ## リセット
   execute as @a[gamemode=adventure] at @s if predicate hd.prkr:reset run function prkr:reset
-## リセット
-  execute as @a[gamemode=adventure,tag=HdP.Reset] at @s run function prkr:area/1/player/player
+## リスタート
+  execute as @a[gamemode=adventure,tag=HdP.Restart] at @s run function prkr:area/1/player/player

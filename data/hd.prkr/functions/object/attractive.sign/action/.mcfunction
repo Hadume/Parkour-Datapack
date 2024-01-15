@@ -6,6 +6,9 @@
 # @private
 # @within predicate hd.prkr:reset
  #declare tag HdP.Sign.Clicked
+#> Function
+# @private
+ #declare tag/function prkr:sign.clicked
 ## 看板クリックしたタグを追加
   tag @s add HdP.Sign.Clicked
 ## 看板クリック時の関数
@@ -13,4 +16,4 @@
 ## 看板クリックしたタグを削除
   tag @s remove HdP.Sign.Clicked
 ## クリエイティブだったら
-  execute if entity @s[gamemode=creative,predicate=!hd.prkr:having.dye] run function hd.prkr:object/attractive.sign/action/creative
+  execute if data entity @s {SelectedItem:{tag:{HdP:{ASign:1b}}}} run function hd.prkr:object/attractive.sign/action/turn

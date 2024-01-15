@@ -1,4 +1,4 @@
-#> hd.prkr:object/attractive.sign/action/creative
+#> hd.prkr:object/attractive.sign/action/turn
 # クリエイティブだったら
 # @within function hd.prkr:object/attractive.sign/action/
 
