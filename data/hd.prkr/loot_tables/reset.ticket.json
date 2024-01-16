@@ -17,7 +17,7 @@
                 },
                 {
                   "text": "リセットチケット",
-                  "color": "aqua",
+                  "color": "gold",
                   "bold": true,
                   "underlined": true
                 }
@@ -34,11 +34,34 @@
                   },
                   {
                     "text": "捨てる",
-                    "color": "gold",
-                    "bold": true
+                    "bold": true,
+                    "color": "aqua"
                   },
                   {
-                    "text": "とパルクールのスタート地点に戻れるよ",
+                    "text": ":　　 ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "エリアリセット",
+                    "color": "white"
+                  }
+                ],
+                [
+                  {
+                    "text": "",
+                    "italic": false
+                  },
+                  {
+                    "text": "オフハンド",
+                    "bold": true,
+                    "color": "aqua"
+                  },
+                  {
+                    "text": ": ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "全体リセット",
                     "color": "white"
                   }
                 ]
