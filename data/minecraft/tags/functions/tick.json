@@ -1,5 +1,6 @@
 {
     "values": [
-        "hd.prkr:tick/"
+        "hd.prkr:tick/",
+        "prkr:tick"
     ]
 }
