@@ -18,7 +18,7 @@
  #declare tag HdP.Restart
 #> Tags.Effects
 # @within function
-#   hd.prkr:reset/
+#   hd.prkr:reset/*
 #   prkr:**
  #declare tag HdP.NightVision
  #declare tag HdP.DolphinsGrace

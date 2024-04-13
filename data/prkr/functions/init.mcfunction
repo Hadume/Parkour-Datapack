@@ -26,7 +26,7 @@
   #summon marker 0 0 0 {UUID:[I; 512, 512, 0, 3]}
   #summon marker 0 0 0 {UUID:[I; 512, 512, 0, 4]}
 ## エリア初期化
-  scoreboard players set $Area.1 Global 0
-  scoreboard players set $Area.2 Global 0
-  scoreboard players set $Area.3 Global 0
-  scoreboard players set $Area.4 Global 0
+  scoreboard players set #Area.1 Global 0
+  scoreboard players set #Area.2 Global 0
+  scoreboard players set #Area.3 Global 0
+  scoreboard players set #Area.4 Global 0

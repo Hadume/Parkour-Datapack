@@ -5,7 +5,7 @@
 #   prkr:area/4/
 
 ## エリア状態リセット
-  scoreboard players set $Area.4 Global 0
+  scoreboard players set #Area.4 Global 0
 ## ブロック削除
 ## ブロック設置
 ## MOB削除

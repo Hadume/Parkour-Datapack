@@ -12,8 +12,8 @@
 #   prkr:area/1/**
 #   prkr:tick
 #   prkr:init
- #declare score_holder $Area.1
+ #declare score_holder #Area.1
 ## エリアリセット
   function prkr:area/1/reset
 ## エリア状態設定
-  scoreboard players set $Area.1 Global 2
+  scoreboard players set #Area.1 Global 2
