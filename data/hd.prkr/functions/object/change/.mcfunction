@@ -6,6 +6,6 @@
 # @within function hd.prkr:object/change/*
  #declare tag HdP.This
 ##
-	execute if data storage hd.p: {SelectedItemCopy:{tag:{HdP:{CGArea:1b}}}} run function hd.prkr:object/change/gamemode
+	execute if data storage hd.p: {SelectedItemCopy:{tag:{HdP:["CGArea"]}}} run function hd.prkr:object/change/gamemode
 ## Tagを外す
 	execute as @e[type=marker,tag=HdP.This] run tag @s remove HdP.This

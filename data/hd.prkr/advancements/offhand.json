@@ -11,7 +11,7 @@
                             ]
                         },
                         "offhand": {
-                            "nbt": "{HdP:{Debug:1b}}"
+                            "nbt": "{HdP:[\"Debug\"]}"
                         }
                     },
                     "player": {

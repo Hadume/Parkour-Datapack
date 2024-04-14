@@ -15,3 +15,8 @@
  #declare score_holder #Area.2.Loaded
  #declare score_holder #Area.3.Loaded
  #declare score_holder #Area.4.Loaded
+#> Tags.gimmick
+# @within function prkr:area/*/**
+ #declare tag Gimmick.1
+ #declare tag Gimmick.2
+ #declare tag Gimmick.3

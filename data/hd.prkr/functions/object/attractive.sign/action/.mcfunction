@@ -16,4 +16,4 @@
 ## 看板クリックしたタグを削除
   tag @s remove HdP.Sign.Clicked
 ## クリエイティブだったら
-  execute if data entity @s {SelectedItem:{tag:{HdP:{ASign:1b}}}} run function hd.prkr:object/attractive.sign/action/turn
+  execute if entity @s[nbt={SelectedItem:{tag:{HdP:["ASign"]}}}] run function hd.prkr:object/attractive.sign/action/turn

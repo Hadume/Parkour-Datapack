@@ -61,7 +61,7 @@
 						},
 						{
 							"function": "set_nbt",
-							"tag": "{EntityTag:{id:\"armor_stand\",Invisible:1b,Marker:1b,Small:1b,Tags:[\"HdP.CGArea\",\"HdP\"]},RepairCost:-2147483648,HideFlags:39,HdP:{Debug:1b,Egg:1b,CGArea:1b}}"
+							"tag": "{EntityTag:{id:\"armor_stand\",Invisible:1b,Marker:1b,Small:1b,Tags:[\"HdP.CGArea\",\"HdP\"]},RepairCost:-2147483648,HideFlags:39,HdP:[\"Debug\",\"Object\",\"CGArea\"]}"
 						}
 					]
 				}

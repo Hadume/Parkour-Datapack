@@ -5,9 +5,9 @@
 ## オフハンドをコピー
 	data modify storage hd.p: OffHandCopy set from entity @s Inventory[{Slot:-106b}]
 ## オフハンドが卵だったら
-	execute if data storage hd.p: {OffHandCopy:{tag:{HdP:{Egg:1b}}}} run function hd.prkr:object/kill
+	execute if data storage hd.p: {OffHandCopy:{tag:{HdP:["Object"]}}} run function hd.prkr:object/kill/
 ## オフハンドがニンジン棒だったら
-	execute if data storage hd.p: OffHandCopy.tag.HdP.COAS run function hd.prkr:coas/stat
+	execute if data storage hd.p: {OffhandCopy:{tag:{HdP:["COAS"]}}} run function hd.prkr:coas/stat
 ## アイテムを返す
 	item replace entity @s weapon.mainhand from entity @s weapon.offhand
 	item replace entity @s weapon.offhand with air

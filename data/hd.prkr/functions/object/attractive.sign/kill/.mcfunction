@@ -1,6 +1,6 @@
 #> hd.prkr:object/attractive.sign/kill/
 # 簡易看板を消す
-# @within function hd.prkr:object/kill
+# @within function hd.prkr:object/kill/
 
 #> Tags
 # @private
@@ -13,3 +13,5 @@
   execute as @e[type=armor_stand,tag=HdP.TextAS] run function hd.prkr:object/attractive.sign/kill/as
 ## 自身を消す
   kill @s
+## 消した
+  data modify storage hd.p: Success set value 1b

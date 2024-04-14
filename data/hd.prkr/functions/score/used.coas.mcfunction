@@ -3,6 +3,6 @@
 # @within function hd.prkr:tick/player
 
 ## スーパーニンジン棒を使ったら
-  execute if data entity @s {SelectedItem:{tag:{HdP:{COAS:1b}}}} run function hd.prkr:coas/used
+  execute if entity @s[nbt={SelectedItem:{tag:{HdP:["COAS"]}}}] run function hd.prkr:coas/used
 ## スコアをリセット
 	scoreboard players reset @s HdP.Used.COAS

@@ -11,7 +11,6 @@
 # @internal
 	scoreboard objectives add HdP.Temp dummy {"text": "一時使用"}
 	scoreboard objectives add HdP.Global dummy {"text": "全体使用"}
-	scoreboard objectives add HdP.Const dummy {"text": "定数"}
 	scoreboard objectives add HdP.Timer dummy {"text": "タイマー"}
 	scoreboard objectives add HdP.SneakTime custom:sneak_time {"text": "スニークしたら"}
 	scoreboard objectives add HdP.Used.COAS used:carrot_on_a_stick {"text": "ニンジン棒使ったら"}

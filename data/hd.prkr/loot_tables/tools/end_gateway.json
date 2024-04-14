@@ -29,7 +29,7 @@
 						},
 						{
 							"function": "set_nbt",
-							"tag": "{EntityTag:{id:\"armor_stand\",Invisible:1b,Marker:1b,Small:1b,Tags:[\"HdP.EndGateway\",\"HdP\"]},RepairCost:-2147483648,HideFlags:39,HdP:{Debug:1b,Egg:1b,EndGateway:1b}}"
+							"tag": "{EntityTag:{id:\"armor_stand\",Invisible:1b,Marker:1b,Small:1b,Tags:[\"HdP.EndGateway\",\"HdP\"]},RepairCost:-2147483648,HideFlags:39,HdP:[\"Debug\",\"Object\",\"EndGateway\"]}"
 						}
 					]
 				}

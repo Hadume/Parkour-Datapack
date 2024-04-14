@@ -17,15 +17,15 @@
 		execute if score @s HdP.DeathCount matches 1.. run function hd.prkr:score/death.count
 		execute if score @s HdP.Dropped.Paper matches 1.. run function hd.prkr:score/dropped.paper
 ## リスタート
-	execute if data entity @s {Inventory:[{Slot:-106b,tag:{HdP:{Reset:1b}}}]} run function hd.prkr:reset/restart
+	execute if entity @s[nbt={Inventory:[{Slot:-106b,tag:{HdP:["Reset"]}}]}] run function hd.prkr:reset/restart
 ## リセット紙を渡す
-	execute if entity @s[gamemode=adventure,nbt=!{Inventory:[{Slot:17b,tag:{HdP:{Reset:1b}}}]}] run loot replace entity @s inventory.8 loot hd.prkr:reset.ticket
+	execute if entity @s[gamemode=adventure,nbt=!{Inventory:[{Slot:17b,tag:{HdP:["Reset"]}}]}] run loot replace entity @s inventory.8 loot hd.prkr:reset.ticket
 ## ゲームモードを変更
 	execute if entity @e[type=marker,tag=HdP.CGArea,distance=..0.75] run function hd.prkr:object/gamemode.area/change
 
 ## 設計用
 	### メインハンドに卵を持っていたら
-		execute if data entity @s {SelectedItem:{tag:{HdP:{Debug:1b}}}} run function hd.prkr:object/particle
+		execute if entity @s[nbt={SelectedItem:{tag:{HdP:["Debug"]}}}] run function hd.prkr:object/particle
 	### スニークしていたら
 		execute if score @s HdP.SneakTime matches 1.. run function hd.prkr:score/sneak.time
 	### ニンジン棒を使ったら

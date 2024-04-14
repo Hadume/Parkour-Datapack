@@ -11,12 +11,12 @@
               "function": "set_name",
               "entity": "this",
               "name": [
-                  {
+                {
                   "text": "",
                   "italic": false
                 },
                 {
-                  "text": "text",
+                  "text": "テキスト",
                   "color": "yellow",
                   "bold": true,
                   "underlined": true
@@ -29,7 +29,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{Unbreakable:1b,CanDestroy:[\"\"],AttributeModifiers:[],CanPlaceOn:[\"\"],RepairCost:-2147483648,HideFlags:39,HdP:{}}"
+              "tag": "{Unbreakable:1b,CanDestroy:[\"\"],AttributeModifiers:[],CanPlaceOn:[\"\"],RepairCost:-2147483648,HideFlags:63,HdP:[]}"
             }
           ]
         }
